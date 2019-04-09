@@ -2815,7 +2815,7 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 600px;
+  height: 500px;
 }
 
 .parallax-container .parallax {
@@ -5136,6 +5136,7 @@ small {
 }
 
 .material-tooltip {
+  margin: 0 auto;
   padding: 10px 8px;
   font-size: 1rem;
   z-index: 2000;
@@ -5153,7 +5154,7 @@ small {
   top: 0;
   pointer-events: none;
   visibility: hidden;
-  background-color: #323232;
+  background-color: #F3AB36;
 }
 
 .backdrop {
@@ -6584,7 +6585,7 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 }
 
 .input-field .prefix.active {
-  color: #26a69a;
+  color: white;
 }
 
 .input-field .prefix ~ input,
@@ -7519,13 +7520,13 @@ input[type=range]::-ms-thumb {
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 15px;
-  border-left: 1px solid #ee6e73;
+  border-left: 2px solid #008551;
 }
 
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 14px;
-  border-left: 2px solid #ee6e73;
+  border-left: 2px solid #008551;
 }
 
 .sidenav {

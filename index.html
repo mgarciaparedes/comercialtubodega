@@ -31,6 +31,26 @@
     .opacity{
       opacity: 0.6;
     }
+
+    .transparente{
+      opacity:0;
+    }
+
+    .color-fondo{
+      background-color: #eceff1;
+    }
+
+     .options:hover{
+      border-bottom: 2px solid #F3AB36;
+      border-left:2px solid #008551;
+    }
+
+    .options2:hover{
+      background-color:#e0e0e0;
+      border-bottom: 2px solid #F3AB36;
+      border-left:2px solid #008551;
+      padding-left: 2px;
+    }
   </style>
 
 </head>
@@ -46,17 +66,21 @@
       <ul class="right hide-on-med-and-down bold">
         <li class="hoverable"><a href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
         <li class="hoverable"><a href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
-        <li class="hoverable"><a href="#services"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
-        <li class="hoverable"><a href="#contact"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
+        <li class="hoverable"><a href="#dogs"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
+        <li class="hoverable"><a href="#cats"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
         <li class="hoverable"><a href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
-        <li class="hoverable"><a href="#contact"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
+        <li class="hoverable"><a href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
         <li><a class="sidenav-close" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
         <li><a class="sidenav-close" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce tu Bodega</a></li>
-        <li><a class="sidenav-close" href="#contact"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
-        <li><a class="sidenav-close" href="#services"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
+        <li><a class="sidenav-close" href="#dogs"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
+        <li><a class="sidenav-close" href="#cats"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
+        <li><a class="sidenav-close" href="#services"><i class="fas fa-file-signature fa-lg"></i> Contacto</a>
+        </li>
+        <li><a class="sidenav-close" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a>
+        </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -67,10 +91,10 @@
   </div>
 
   <!--PARALLAX 1-->
-  <div id="index-banner" class="parallax-container">
+  <div id="index-banner" class="parallax-container" style="height:600px;">
     <div class="section no-pad-bot">
       <div class="container scrollspy">
-        <!--<div class="row">
+        <!--<div class="row transparente">
           <div class="col s12 m12 l12 animated fadeInRight">
             <div class="card black opacity">
             <div class="card-content">
@@ -81,7 +105,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row transparente">
           <div class="col s12 m4 l4 animated fadeInRight">
             <div class="card opacity">
             <div class="card-content" style="opacity:1">
@@ -91,160 +115,299 @@
           </div>
         </div>
 
-        <div class="row right animated fadeInRight">
-
-          <a class="waves-effect waves-light btn-large" style="background-color:#F3AB36;" href="#aboutus">Ven y conoce más</a>
+        <div class="row transparente">
+          <a class="waves-effect waves-light btn-large" style="background-color:#D4952E;" href="#aboutus">Ven y conoce más</a>
         </div>
-        <br><br>-->
-
+        <div class="row transparente">
+          
+        </div>
+        <div class="row">
+          
+              <h5 class="header white-text center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </h5>
+            
+        </div>
+        <div class="row">
+          <a class="waves-effect waves-light btn-large black-text" style="background-color:#F3AB36;" href="#aboutus">Ven y conoce más</a>
+        </div>-->
       </div>
     </div>
     <div class="parallax scrollspy" id="index"><img src="parallax-img/background.png" alt="Unsplashed background img 1"></div>
   </div>
 
   <!--SOBRE NOSOTROS-->
-  <div class="container-fluid scrollspy" style="margin:0;padding:0" id="aboutus">
+  <div class="color-fondo">
+  <div class="container-fluid scrollspy" id="aboutus">
     <div class="section">
       <div class="row">
-        <div class="col s12 m12 l12 justify">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        <div class="col s12 m6 l6 center">
+          <img src="img/logo_blackandwhite.png" style="width:100%;padding-top:5%;">
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card color-fondo white-text" style="background-color:#F3AB36"><div class="card-content">Misión</div></div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          cillum dolore eu fugiat nulla pariatur.</i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m6 l6">
+          <div class="card white-text" style="background-color:#008551"><div class="card-content">Visión</div></div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</i></p>
+        </div>
+          <div class="col s12 m6 l6 justify">
+            <img src="img/cat_dog2.png" style="width:100%;height:220px;">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col s12 m6 l6 justify">
+          <img src="img/handshake.png" style="padding-right:15%;padding-left:15%;width:100%;height:220px;">
+        </div>
+        <div class="col s12 m6 l6 justify">
+          <div class="card white-text"  style="background-color:#0064A6"><div class="card-content">Nuestros Valores</div></div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</i></p>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 
   <!--PARALLAX 2-->
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper scrollspy" id="dogs" >
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Imágenes representativas</h5>
-        </div>
-      </div>
     </div>
-    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="parallax-img/background1.png" alt="Unsplashed background img 2"></div>
   </div>
 
 
-  <!--SERVICIOS-->
-  <div class="container scrollspy" id="services">
+  <!--PERROS-->
+  <div class="container-fluid scrollspy">
     <div class="section">
       <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div class="card">
-            <div class="card-image">
-              <img src="loading.jpg">
-              <span class="card-title">Card Title</span>
-
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn" href="#">Ver más</a>
-            </div>
-          </div>
-          </div>
+        
+        <div class="col hide-on-small-only m3 l2">
+          <ul class="section table-of-contents">
+            <li><a href="#secopremium" class="options">SECO PREMIUM</a></li>
+            <li><a href="#secomainstream" class="options">SECO MAINSTREAM</a></li>
+            <li><a href="#humedoperro" class="options">HÚMEDO PERRO</a></li>
+          </ul>
         </div>
+        
+        <div class="col s12 m9 l10">
 
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div class="card">
-            <div class="card-image">
-              <img src="loading.jpg">
-              <span class="card-title">Card Title</span>
-
+          <div id="secopremium" class="section scrollspy">
+            <div class="row">
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
             </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
             </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn" href="#">Ver más</a>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
             </div>
           </div>
+
+         
+
+          <div id="secomainstream" class="section scrollspy">
+            <div class="row">
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            </div>
           </div>
+
+
+
+          <div id="humedoperro" class="section scrollspy">
+            <div class="row">
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            </div>
+          </div>
+
         </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <div class="card">
-            <div class="card-image">
-              <img src="loading.jpg">
-              <span class="card-title">Card Title</span>
-
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a class="waves-effect waves-light btn" href="#">Ver más</a>
-            </div>
-          </div>
-          </div>
-        </div>
-</div>
+      </div>
     </div>
   </div>
 
   <!--PARALLAX 3-->
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container valign-wrapper scrollspy" id="cats" >
     <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">Imágenes representativas</h5>
+    </div>
+    <div class="parallax"><img src="parallax-img/background2.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <!--GATOS-->
+  <div class="container-fluid scrollspy">
+    <div class="section">
+      <div class="row">
+        
+        <div class="col hide-on-small-only m3 l2">
+          <ul class="section table-of-contents">
+            <li><a href="#secopremium" class="options">SECO PREMIUM</a></li>
+            <li><a href="#secomainstream" class="options">SECO MAINSTREAM</a></li>
+            <li><a href="#humedoperro" class="options">HÚMEDO PERRO</a></li>
+          </ul>
+        </div>
+        
+        <div class="col s12 m9 l10">
+
+          <div id="secopremium" class="section scrollspy">
+            <div class="row">
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a href="index.html" class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+         
+
+          <div id="secomainstream" class="section scrollspy">
+            <div class="row">
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+
+
+          <div id="humedoperro" class="section scrollspy">
+            <div class="row">
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            <div class="card col s12 m4 l4">
+              <div class="card-content">
+                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+              </div>
+            </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
 
   <!--CONTACTO-->
-  <div class="container scrollspy" id="contact">
+  <div style="background-color:#008551" class="scrollspy white-text" id="contact">
+  <div class="container">
     <div class="section">
 
       <div class="row">
         <div class="col s12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contacto</h4>
+          <div class="card" style="background-color:#0064A6"><div class="card-content">
+            <h5 class="white-text">Contacto</h5>
+          </div></div>
+
           <div class="row">
             <form class="col s12" method="post" action="">
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 l6 m6">
                   <i class="material-icons prefix">account_circle</i>
                   <input id="icon_prefix" type="text" name="nombre" class="validate">
                   <label for="icon_prefix">Nombre</label>
                 </div>
-                <div class="input-field col s6">
+                <div class="input-field col s12 l6 m6">
                   <i class="material-icons prefix">account_circle</i>
                   <input id="icon_lastname" type="text" name="apellido" class="validate">
                   <label for="icon_lastname">Apellidos</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s6">
+                <div class="input-field col s12 l6 m6">
                   <i class="material-icons prefix">email</i>
                   <input id="icon_email" type="text" class="validate" name="email">
                   <label for="icon_email">Correo electrónico</label>
                 </div>
-                <div class="input-field col s6">
+                <div class="input-field col s12 l6 m6">
                   <i class="material-icons prefix">phone</i>
                   <input id="icon_telephone" type="tel" class="validate" name="tel">
                   <label for="icon_telephone">Teléfono</label>
                 </div>
               </div>
               <div class="row">
-                <div class="input-field col s12">
+                <div class="input-field col s12 l12 m12">
                   <i class="material-icons prefix">border_color</i>
                   <textarea id="textarea2" class="materialize-textarea" name="mensaje" data-length="120"></textarea>
                   <label for="textarea2">Mensaje</label>
@@ -252,7 +415,7 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <button type="submit" class="waves-effect waves-light btn-large"><i class="material-icons right">send</i>Enviar</button>
+                  <button type="submit" class="waves-effect waves-light btn-large" style="background-color:#F3AB36"><i class="material-icons right">send</i>Enviar</button>
                 </div>
               </div>
             </form>
@@ -262,24 +425,21 @@
 
     </div>
   </div>
+  </div>
 
 
   <!--UBICACIÓN GOOGLE MAPS-->
-      <div class="container-fluid">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.979462331864!2d-73.98380108509384!3d40.762476442463864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f88254f2c3%3A0xc307e150c50c51f7!2sSheraton+New+York+Times+Square+Hotel!5e0!3m2!1ses-419!2scl!4v1547929775029" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      
-        
-    
-
+  <div class="scrollspy" id="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.979462331864!2d-73.98380108509384!3d40.762476442463864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f88254f2c3%3A0xc307e150c50c51f7!2sSheraton+New+York+Times+Square+Hotel!5e0!3m2!1ses-419!2scl!4v1547929775029" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
 
   <!--FOOTER-->
-  <footer class="page-footer teal">
+  <footer class="page-footer grey lighten-2 black-text">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Información adicional de la compañía</h5>
-          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          <h5>Información adicional de la compañía</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. </p>
@@ -287,28 +447,30 @@
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5>Menú</h5>
           <ul>
-            <li><a class="white-text" href="#!">Home</a></li>
-            <li><a class="white-text" href="#!">Sobre nosotros</a></li>
-            <li><a class="white-text" href="#!">Servicios</a></li>
-            <li><a class="white-text" href="#!">Contacto</a></li>
+            <li><a class="options2 black-text" href="#index">Inicio</a></li>
+            <li><a class="options2 black-text" href="#aboutus">Sobre nosotros</a></li>
+            <li><a class="options2 black-text" href="#dogs">Perros</a></li>
+            <li><a class="options2 black-text" href="#cats">Gatos</a></li>
+            <li><a class="options2 black-text" href="#contact">Contacto</a></li>
+            <li><a class="options2 black-text" href="#maps">Ubicación</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5>Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!"><i class="fab fa-facebook"></i></a></li>
-            <li><a class="white-text" href="#!"><i class="fab fa-instagram"></i></a></li>
-            <li><a class="white-text" href="#!"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#!"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
             
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Powered by <a class="brown-text text-lighten-3" href="#">Miguel Garcia</a>
+      <div class="container black-text">
+      Powered by <a class="teal-text" href="#">Miguel Garcia</a>
       </div>
     </div>
   </footer>
@@ -318,13 +480,16 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/scrollspy.js"></script>
+
   <script>
   $(document).ready(function(){
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
     $('.sidenav').sidenav();
-
+     $('.tooltipped').tooltip();
   });
+
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.scrollspy');
     var instances = M.ScrollSpy.init(elems, {
