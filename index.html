@@ -14,7 +14,7 @@
 
   <link rel="icon" type="image/png" href="img/icono.png" />
   <style type="text/css">
-    ul li a:hover{    
+    ul li .navbar-option:hover{    
       border-bottom: 5px solid #F3AB36;
       background-color:white;
       color: #0064A6;
@@ -52,6 +52,10 @@
       padding-left: 2px;
     }
 
+    .options3:hover{
+      background-color:#fff;
+    }
+
     .yellow-icon{
       color:#F3AB36;
     }
@@ -64,27 +68,60 @@
   <div class="navbar-fixed">
   <nav class="white navbar-fixed" role="navigation">
     <div class="nav-wrapper" style="padding-right:5%;padding-left:5%">
+
+
       <a id="logo-container" href="#index" class="brand-logo">
         <img src="img/logo.png" style="width: 7em;">
       </a>
+
+
       <ul class="right hide-on-med-and-down bold">
-        <li class="hoverable"><a href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
-        <li class="hoverable"><a href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
-        <li class="hoverable"><a href="#dogs"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
-        <li class="hoverable"><a href="#cats"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
-        <li class="hoverable"><a href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
-        <li class="hoverable"><a href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
+
+        <li class="hoverable"><a class="dropdown-trigger navbar-option" href="#!" data-target="dropdown1"><i class="fas fa-dog fa-lg"></i>  Perros<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li class="hoverable"><a class="dropdown-trigger navbar-option" href="#!" data-target="dropdown2"><i class="fas fa-cat fa-lg"></i>  Gatos<i class="material-icons right">arrow_drop_down</i></a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
+
       </ul>
 
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#secopremium">Seco Premium</a></li>
+        <li><a href="#secomainstream">Seco Mainstream</a></li>
+        <li><a href="#humedoperro">Húmedo perro</a></li>
+      </ul>
+
+
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#secopremiumgato">Seco Premium</a></li>
+        <li><a href="#secomainstreamgato">Seco Mainstream</a></li>
+        <li><a href="#humedogato">Húmedo Gato</a></li>
+        <li><a href="#patefelix">Paté Felix</a></li>
+      </ul>
+
+
       <ul id="nav-mobile" class="sidenav">
-        <li><a class="sidenav-close" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
-        <li><a class="sidenav-close" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce tu Bodega</a></li>
-        <li><a class="sidenav-close" href="#dogs"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
-        <li><a class="sidenav-close" href="#cats"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
-        <li><a class="sidenav-close" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a>
+        <li><a class="sidenav-close navbar-option" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
+
+        <li><a class="sidenav-close navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce tu Bodega</a></li>
+
+        <li><a class="sidenav-close navbar-option" href="#dogs"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
+
+        <li><a class="sidenav-close navbar-option" href="#cats"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
+        
+        <li><a class="sidenav-close navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a>
         </li>
-        <li><a class="sidenav-close" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a>
+
+        <li><a class="sidenav-close navbar-option" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a>
         </li>
+
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
@@ -215,22 +252,22 @@
             <div class="row">
               <div class="card white-text center" style="background-color:#0064A6;">
                 <div class="card-content">
-                  <h6><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i> -  LÍNEA SECO PREMIUM</h6>
+                  <h6><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i> - LÍNEA SECO PREMIUM</h6>
                 </div>
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
-                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
+                <a href="#modal1" class="tooltipped modal-trigger" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_cachorro.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_adulto.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_dc_adulto_rp.png"></a>
               </div>
@@ -249,21 +286,20 @@
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m4 l4">
+           <div class="col s12 m6 l4">
               
-                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_doko_18kg.png"></a>
-              
-            </div>
-            <div class="col s12 m4 l4">
-              
-                <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_doko_cachorro.png"></a>
+                <a href="" class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_doko_18kg.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_doko_adulto.png"></a>
               
             </div>
+            <div class="col s12 m6 l4">
+              
+                <a class="tooltipped left" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_doko_cachorro.png"></a>
+              </div>
             </div>
           </div>
 
@@ -276,17 +312,17 @@
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/humedo1.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/humedo2.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/humedo3.png"></a>
               
@@ -331,32 +367,30 @@
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_cc_gatitos.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_cc_delimix.png"></a>
               
             </div>
             </div>
             </div>
-          
-
-         
+           
 
           <div id="secomainstreamgato" class="section scrollspy">
             <div class="row">
               <div class="card white-text center" style="background-color:#0064A6;">
                 <div class="card-content">
-                  <h6><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i> -  LÍNEA SECO MAINSTREAM</h6>
+                  <h6><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i> - LÍNEA SECO MAINSTREAM</h6>
                 </div>
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/saco_gati.png"></a>
               
@@ -368,22 +402,22 @@
             <div class="row">
               <div class="card white-text center" style="background-color:#0064A6;">
                 <div class="card-content">
-                  <h6><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i> -  LÍNEA HÚMEDO GATO</h6>
+                  <h6><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i> - LÍNEA HÚMEDO GATO</h6>
                 </div>
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/humedo_gato_1.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/humedo_gato_2.png"></a>
               
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m6 l4">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/humedo_gato_3.png"></a>
               
@@ -401,12 +435,12 @@
               </div>
             </div>
             <div class="row">
-            <div class="col s12 m6 l6">
+            <div class="col s12 m12 l6">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/pate_gato_pya.png"></a>
               
             </div>
-            <div class="col s12 m6 l6">
+            <div class="col s12 m12 l6">
               
                 <a class="tooltipped" data-position="top" data-tooltip="Ver más datos de este producto"><img src="img/pate_gato_salmon.png"></a>
               
@@ -542,6 +576,44 @@
     </div>
   </main>
 
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <div class="row">
+        <div class="card white-text" style="background-color:#0064A6"><div class="card-content"><span><b>SACO DOG CHOW CACHORROS</b></span></div></div>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <img src="products-img/dc_cachorro.png" style="width:20em;">
+        </div>
+        <div class="col s6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DC Cachorro<br>
+          <b>Tipo:</b> Razas pequeñas<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 3002<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 1.5 Kg.</b><br>
+          <b>Código:</b> 3000<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -554,7 +626,12 @@
     $('.parallax').parallax();
     $('.scrollspy').scrollSpy();
     $('.sidenav').sidenav();
-     $('.tooltipped').tooltip();
+    $('.tooltipped').tooltip();
+    $('.modal').modal();
+    $('.dropdown-trigger').dropdown({
+      coverTrigger: false,
+    });
+
 
   });
 
