@@ -3,7 +3,6 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
-
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -6226,9 +6225,10 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  -webkit-box-shadow: 0 1px 0 0 #26a69a;
-          box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 1px solid #F3AB36;
+  -webkit-box-shadow: 0 1px 0 0 #F3AB36;
+          box-shadow: 0 1px 0 0 #F3AB36;
+          
 }
 
 input:not([type]):focus:not([readonly]) + label,
@@ -6244,7 +6244,7 @@ input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
 input[type=number]:not(.browser-default):focus:not([readonly]) + label,
 input[type=search]:not(.browser-default):focus:not([readonly]) + label,
 textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #26a69a;
+  color: #0064A6;
 }
 
 input:not([type]):focus.valid ~ label,
@@ -6259,8 +6259,8 @@ input[type=datetime-local]:not(.browser-default):focus.valid ~ label,
 input[type=tel]:not(.browser-default):focus.valid ~ label,
 input[type=number]:not(.browser-default):focus.valid ~ label,
 input[type=search]:not(.browser-default):focus.valid ~ label,
-textarea.materialize-textarea:focus.valid ~ label {
-  color: #4CAF50;
+textarea.materialize-textarea:focus.valid ~ label{
+  color: #0064A6;
 }
 
 input:not([type]):focus.invalid ~ label,
@@ -6321,9 +6321,10 @@ input[type=search].valid:not(.browser-default),
 input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
 textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #4CAF50;
-  -webkit-box-shadow: 0 1px 0 0 #4CAF50;
-          box-shadow: 0 1px 0 0 #4CAF50;
+  border-bottom: 1px solid #F3AB36;
+  -webkit-box-shadow: 0 1px 0 0 #F3AB36;
+          box-shadow: 0 1px 0 0 #F3AB36;
+          color:#0064A6;
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,

@@ -5,7 +5,65 @@
  *
  * Made By MaterializeCSS.com
  */
+ul li .navbar-option:hover{    
+      border-bottom: 5px solid #F3AB36;
+      background-color:white;
+      color: #0064A6;
+    }
 
+    ul li a:hover i{
+      color: #008551;
+    }
+
+    .bold{
+      font-weight: bold;
+    }
+
+    .opacity{
+      opacity: 0.6;
+    }
+
+    .transparente{
+      opacity:0;
+    }
+
+    .color-fondo{
+      background-color: #eceff1;
+    }
+
+     .options:hover{
+      border-bottom: 2px solid #F3AB36;
+      border-left:2px solid #008551;
+    }
+
+    .options2:hover{
+      background-color:#e0e0e0;
+      border-bottom: 2px solid #F3AB36;
+      border-left:2px solid #008551;
+      padding-left: 2px;
+    }
+
+    .options3:hover{
+      background-color:#fff;
+    }
+
+    .options4:hover{
+      border-bottom: 2px solid #F3AB36;
+      border-left:2px solid #008551;
+      color:#0064A6;
+    }
+
+    .options4:focus i.{
+      color:#0064A6;
+    }
+
+    /*.options4{
+      color:#0064A6;
+    }*/
+
+    .yellow-icon{
+      color:#F3AB36;
+    }
 nav ul a,
 nav .brand-logo {
   color: #444;
