@@ -4408,7 +4408,7 @@ nav ul a {
   font-size: 1rem;
   color: #fff;
   display: block;
-  padding: 0 15px;
+  padding: 0 10px;
   cursor: pointer;
 }
 
@@ -6262,7 +6262,7 @@ input[type=tel]:not(.browser-default):focus.valid ~ label,
 input[type=number]:not(.browser-default):focus.valid ~ label,
 input[type=search]:not(.browser-default):focus.valid ~ label,
 textarea.materialize-textarea:focus.valid ~ label{
-  color: #0064A6;
+  color: black;
 }
 
 input:not([type]):focus.invalid ~ label,
@@ -6326,7 +6326,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-
   border-bottom: 1px solid #F3AB36;
   -webkit-box-shadow: 0 1px 0 0 #F3AB36;
           box-shadow: 0 1px 0 0 #F3AB36;
-          color:#0064A6;
+          
 }
 
 input.invalid:not([type]), input.invalid:not([type]):focus,
