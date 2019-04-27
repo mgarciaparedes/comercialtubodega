@@ -6191,7 +6191,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         var $trigger = $(e.target);
         for (var i = ScrollSpy._elements.length - 1; i >= 0; i--) {
           var scrollspy = ScrollSpy._elements[i];
-          if ($trigger.is('a[href="#' + scrollspy.$el.attr('id') + '"]')) {
+          if ($trigger.is('a[href="#' + scrollspy.$el.attr('id') + '"]') || $trigger.is('a[href="#' + scrollspy.$el.attr('id') + '"],img[id="' + scrollspy.$el.attr('id') + '"]')) {
             e.preventDefault();
             var offset = scrollspy.$el.offset().top + 1;
 
