@@ -1,0 +1,2428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>COM. TU BODEGA</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="img/icono.png" />
+
+  <style type="text/css">
+
+      .product-divider:hover{
+         border:1px solid #e0e0e0;
+        border-radius:5px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <!--BARRA DE NAVEGACIÓN-->
+  <div class="navbar-fixed">
+  <nav class="white navbar-fixed" role="navigation">
+    <div class="nav-wrapper" style="padding-right:5%;padding-left:5%">
+
+
+      <a id="logo-container" href="#index" class="brand-logo">
+        <img src="img/logo.png" style="width: 7em;">
+      </a>
+
+
+      <ul class="right hide-on-med-and-down bold">
+
+        <li class="hoverable"><a class="navbar-option" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
+
+        <li class="hoverable"><a class="dropdown-trigger navbar-option" href="#!" data-target="dropdown1"><i class="fas fa-dog fa-lg"></i>  Perros <i class="fas fa-sort-down fa-lg"></i></a></li>
+
+        <li class="hoverable"><a class="dropdown-trigger navbar-option" href="#!" data-target="dropdown2"><i class="fas fa-cat fa-lg"></i>  Gatos <i class="fas fa-sort-down fa-lg"></i></a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
+
+        <li class="hoverable"><a class="navbar-option" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
+
+      </ul>
+
+
+      <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#dogchow"><img id="dogchow" src="brands/dogchow.png" style="width:100%"></a></li>
+        <li><a href="#doko"><img id="doko" src="brands/doko.png" style="width:100%"></a></li>
+        <li><a href="#doguitos"><img id="doguitos" src="brands/doguitos.png" style="width:100%"></a></li>
+        <li><a href="#duroderoer"><img id="duroderoer" src="brands/duroderoer.png" style="width:100%"></a></li>
+      </ul>
+
+
+      <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#catchow"><img id="catchow" src="brands/catchow.png" style="width:100%"></a></li>
+        <li><a href="#felix"><img id="felix" src="brands/felix.png" style="width:100%"></a></li>
+        <li><a href="#gati"><img id="gati" src="brands/gati.png" style="width:100%"></a></li>
+      </ul>
+
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a class="sidenav-close navbar-option" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
+
+        <li><a class="sidenav-close navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce tu Bodega</a></li>
+
+        <li><a class="sidenav-close navbar-option" href="#dogs"><i class="fas fa-dog fa-lg"></i> Perros</a></li>
+
+        <li><a class="sidenav-close navbar-option" href="#cats"><i class="fas fa-cat fa-lg"></i> Gatos</a></li>
+        
+        <li><a class="sidenav-close navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a>
+        </li>
+
+        <li><a class="sidenav-close navbar-option" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a>
+        </li>
+
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  </div>
+  <div>
+    
+  </div>
+
+  <!--PARALLAX 1-->
+  <div id="index-banner" class="parallax-container animated fadeIn" style="height:600px;">
+    <div class="section no-pad-bot">
+      <div class="container scrollspy">
+        <!--<div class="row transparente">
+          <div class="col s12 m12 l12 animated fadeInRight">
+            <div class="card black opacity">
+            <div class="card-content">
+              <h5 class="header white-text">
+                "Nuestra mascota, nuestra familia"
+              </h5>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row transparente">
+          <div class="col s12 m4 l4 animated fadeInRight">
+            <div class="card opacity">
+            <div class="card-content" style="opacity:1">
+              
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row transparente">
+          <a class="waves-effect waves-light btn-large" style="background-color:#D4952E;" href="#aboutus">Ven y conoce más</a>
+        </div>
+        <div class="row transparente">
+          
+        </div>
+        <div class="row">
+          
+              <h5 class="header white-text center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+              </h5>
+            
+        </div>
+        <div class="row">
+          <a class="waves-effect waves-light btn-large black-text" style="background-color:#F3AB36;" href="#aboutus">Ven y conoce más</a>
+        </div>-->
+      </div>
+    </div>
+    <div class="parallax scrollspy" id="index"><img src="parallax-img/background.png" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <!--SECCIÓN CONOCE A TU BODEGA-->
+  <div class="color-fondo">
+  <div class="container-fluid scrollspy" id="aboutus">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 m12 l6"  data-aos="flip-up" data-aos-duration="1000">
+          <div class="card white-text center" style="background-color:#F3AB36">
+            <div class="card-content">
+              <h5><img src="img/logo_texture.png" style="width:2em;"> CONÓCENOS</h5>
+            </div>
+          </div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</i></p>
+        </div>
+          <div class="col s12 m6 l6 justify" data-aos="fade-left" data-aos-duration="1000">
+            <img src="img/logo2.png" class="hide-on-med-and-down" style="width:100%;height:220px;">
+          </div>
+        </div>
+
+      <div class="row">
+        <div class="col s12 m12 l6 center" data-aos="fade-right" data-aos-duration="1000">
+          <img src="img/aa.png" class="hide-on-med-and-down" style="width:100%;height:220px;">
+        </div>
+        <div class="col s12 m12 l6" data-aos="flip-up" data-aos-duration="1000">
+          <div class="card color-fondo white-text center" style="background-color:#008551"><div class="card-content"><h5><i class="fas fa-industry"></i> NUESTRA MISIÓN</h5></div></div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</i></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l6" data-aos="flip-up" data-aos-duration="1000">
+          <div class="card white-text center" style="background-color:#0064A6"><div class="card-content"><h5><i class="fas fa-external-link-alt"></i> NUESTRA VISIÓN</h5></div></div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</i></p>
+        </div>
+          <div class="col s12 m6 l6 justify" data-aos="fade-left" data-aos-duration="2000">
+            <img src="img/growth3.png"  class="hide-on-med-and-down" style="width:100%;height:220px;">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col s12 m6 l6 justify" data-aos="fade-right" data-aos-duration="1000">
+          <img src="img/user_male.png"  class="hide-on-med-and-down" style="padding-right:15%;padding-left:15%;width:100%;height:220px;">
+        </div>
+        <div class="col s12 m12 l6 justify" data-aos="flip-up" data-aos-duration="1000">
+          <div class="card white-text center"  style="background-color:#F3AB36"><div class="card-content"><h5><i class="fas fa-female"></i><i class="fas fa-male"></i> NUESTROS VALORES</h5></div></div>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur.</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!--PARALLAX 2-->
+  <div class="parallax-container valign-wrapper scrollspy" id="dogs" >
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img src="parallax-img/background1.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+  <!--PERROS-->
+    <div class="section scrollspy" style="background-color:#177048;" id="dogchow">
+      <!--LOGO DOG CHOW-->
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/dogchow.png" style="width:10em;"> 
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 1 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_adulto.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>ADULTOS RAZAS MEDIANAS Y GRANDES</h4>
+          <p>Tu perro es único, ya creció y le fascina ser un miembro activo de tu familia. Es por eso que se merece un alimento que nutra todo lo que lo hace tan especial. PURINA® DOG CHOW® Adultos Razas Medianas y Grandes está específicamente formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Proteínas y calcio ayudan a reforzar unos fuertes huesos, músculos y dientes.</li>
+            <li class="collection-item">Producto altamente palatable, aporta nutrición completa y balanceada, elaborado especialmente para perros adultos que pesan 10 kilos o más de peso.</li>
+            <li class="collection-item">Con Fibras Naturales para mejorar la digestión de tu perro, así estará con más ánimo y ganas de pasear en familia.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 8 Kg.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>21,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>4,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,2% / 1,8%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,8% / 1,4%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 2 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_rp.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>ADULTOS RAZAS MINI Y PEQUEÑOS</h4>
+          <p>Tu perro es único. Su pequeño cuerpo ya creció y le fascina estar activo con tu familia. Es por eso que merece un alimento que nutra todo lo que lo hace tan especial. PURINA® DOG CHOW® Adultos Razas Pequeñas está específicamente formulado con los nutrientes e ingredientes de calidad que lo ayudarán a tener salud y vitalidad por muchos más años.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Proteínas y calcio ayudan a reforzar unos fuertes huesos, músculos y dientes.</li>
+            <li class="collection-item">Croquetas más pequeñas para promover dientes y encías más saludables.</li>
+            <li class="collection-item">Nutrición específicamente balanceada para ayudar a tu perro de raza pequeña a optimizar la salud de sus órganos vitales, tales como el corazón.</li>
+            <li class="collection-item">Una mezcla específica de minerales ayuda a que el pequeño cuerpo de tu perro absorba los nutrientes que más necesita.</li>
+            <li class="collection-item">Digestión Sana = Vida Sana</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 8 Kg.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>23,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>4,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,8%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,85% / 1,2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 3 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_cachorro.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>CACHORROS RAZAS MEDIANAS Y GRANDES</h4>
+          <p>Tu cachorro de raza pequeña tiene necesidades únicas para su edad y tamaño. Por eso, PURINA® DOG CHOW® Cachorros Razas Pequeñas está específicamente formulado con los nutrientes e ingredientes de calidad que su cuerpo necesita para crecer sano y fuerte.</p>
+          <p>Asegúrate que tu cachorro crezca sano con la alimentación que ofrece PURINA® DOG CHOW®Cachorros, con DHA, que ayuda al desarrollo del cerebro y la visión y 23 Vitaminas y Minerales: una nutrición 100% completa y balanceada. Así, le ayudarán a que disfruten de todos los momentos en familia.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">DHA ayuda al desarrollo del cerebro y la visión.</li>
+            <li class="collection-item">Calcio para un óptimo crecimiento huesos y dientes fuertes.</li>
+            <li class="collection-item">Proteínas a base de pollo para músculos fuertes.</li>
+            <li class="collection-item">Vitaminas y antioxidantes ayudan a fortalecer las defensas naturales.</li>
+            <li class="collection-item">Inulina para una sana digestión.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 8 Kg.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 24 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>27,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>11,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,8%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,9%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 4 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_cachorro.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>CACHORROS RAZAS PEQUEÑAS</h4>
+          <p>Tu cachorro de raza pequeña tiene necesidades únicas para su edad y tamaño. Por eso, PURINA® DOG CHOW® Cachorros Razas Pequeñas está específicamente formulado con los nutrientes e ingredientes de calidad que su cuerpo necesita para crecer sano y fuerte.</p>
+          <p>Asegúrate que tu cachorro crezca sano con la alimentación que ofrece PURINA® DOG CHOW®Cachorros, con DHA, que ayuda al desarrollo del cerebro y la visión y 23 Vitaminas y Minerales: una nutrición 100% completa y balanceada. Así, le ayudarán a que disfruten de todos los momentos en familia.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">DHA ayuda al desarrollo del cerebro y la visión.</li>
+            <li class="collection-item">Calcio para un óptimo crecimiento huesos y dientes fuertes.</li>
+            <li class="collection-item">Proteínas a base de pollo para músculos fuertes.</li>
+            <li class="collection-item">Vitaminas y antioxidantes ayudan a fortalecer las defensas naturales.</li>
+            <li class="collection-item">Inulina para una sana digestión.</li>
+            <li class="collection-item">Con croquetas pequeñas especiales para su tamaño.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 8 Kg.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>27,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>11,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,8%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,9%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 11 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_longevidad.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>LONGEVIDAD ADULTOS 7+</h4>
+          <p>Con el consumo regular de Purina y manteniendo una condición corporal podrá vivir mejor por más tiempo.</p>
+          <p>¡Le brinda la alimentación ideal, para que siga al máximo en su nueva etapa de vida! Purina® Dog Chow® EDAD MADURA® ayuda a mantener la salud y vitalidad de tu perro, ya que todos quieren disfrutar al máximo momentos con él.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">DHA ayuda al desarrollo del cerebro y la visión.</li>
+            <li class="collection-item">Calcio para un óptimo crecimiento huesos y dientes fuertes.</li>
+            <li class="collection-item">Proteínas a base de pollo para músculos fuertes.</li>
+            <li class="collection-item">Vitaminas y antioxidantes ayudan a fortalecer las defensas naturales.</li>
+            <li class="collection-item">Inulina para una sana digestión.</li>
+            <li class="collection-item">Con croquetas pequeñas especiales para su tamaño.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 8 Kg.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>25,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>7,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>8,5%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,1% / 1,7%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,7% /1,2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 5 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/pouch_pollo.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>FESTIVAL DE POLLO TROZOS JUGOSOS ADULTOS</h4>
+          <p>Alimento húmedo completo para perros adultos de todas las razas. Está preparado con ingredientes de alta calidad y sin adición de conservantes artificiales. Una receta con sabrosos trocitos con pavo ideal para su alimentación, para darle una vida sana a tu perro y vivir momentos especiales.</p>
+          <p>Los perros adultos necesitan cerca de un sobre de 100 g por cada 1,6 a 1,8 kg de peso corporal al día, repartido en 2 o más comidas. Puedes mezclarlo con alimentos secos, pero la cantidad de alimento seco debe ser ajustada para mantenerlo en una condición corporal ideal. Un sobre reemplazará aproximadamente 1/3 taza (de 200 ml) que equivale aproximadamente a 30 g de DOG CHOW® seco.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Calcio para dientes fuertes.</li>
+            <li class="collection-item">Sin adición de conservantes artificiales.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 100 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>78,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>0,2%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,18%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- INFORMACION PRODUCTO 6 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/pouch_carne.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>CENA DE CARNE TROZOS JUGOSOS ADULTOS</h4>
+          <p>Alimento húmedo completo para perros adultos de todas las razas. Está preparado con ingredientes de alta calidad y sin adición de conservantes artificiales. Una receta con sabrosos trocitos con pavo ideal para su alimentación, para darle una vida sana a tu perro y vivir momentos especiales.</p>
+          <p>Los perros adultos necesitan cerca de un sobre de 100 g por cada 1,6 a 1,8 kg de peso corporal al día, repartido en 2 o más comidas. Puedes mezclarlo con alimentos secos, pero la cantidad de alimento seco debe ser ajustada para mantenerlo en una condición corporal ideal. Un sobre reemplazará aproximadamente 1/3 taza (de 200 ml) que equivale aproximadamente a 30 g de DOG CHOW® seco.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Calcio para dientes fuertes.</li>
+            <li class="collection-item">Sin adición de conservantes artificiales.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 100 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>78,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>0,2%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,18%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 7 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/pouch_cachorro.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>TROZOS JUGOSOS DE POLLO CACHORRO</h4>
+          <p>Alimento húmedo completo para perros adultos de todas las razas. Está preparado con ingredientes de alta calidad y sin adición de conservantes artificiales. Una receta con sabrosos trocitos con pavo ideal para su alimentación, para darle una vida sana a tu perro y vivir momentos especiales.</p>
+          <p>Los perros cachorros necesitan cerca de un sobre de 100 g por cada 0,7 a 0,9 kg de peso corporal al día, repartido en 2 o más comidas. Puedes mezclarlo con alimentos secos para cachorros, pero la cantidad de alimento seco debe ser ajustada para mantenerlo en una condición corporal ideal. Un sobre reemplazará aproximadamente 1/3 taza (de 200 ml) que equivale aproximadamente a 30 g de DOG CHOW® Cachorros seco.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Calcio para dientes fuertes.</li>
+            <li class="collection-item">Sin adición de conservantes artificiales.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 100 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>78,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>0,22%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      
+      <!-- INFORMACION PRODUCTO 8 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_lata.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>FESTIVAL DE PAVO Y POLLO ADULTOS LATA</h4>
+          <p>Texturas y sabores ideales para que alimentes a ese miembro tan especial de la familia.</p>
+          
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Músculos y huesos fuertes.</li>
+            <li class="collection-item">Órganos saludables.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/icono_lata.png" style="width:1em;"></td>
+              <td>Lata: 374 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>9,5%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>80,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>3,5%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 11 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/dc_lata_fdp.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOG CHOW®</p>
+          <h4>FESTIVAL DE TROZOS DE POLLO ADULTOS LATA</h4>
+          <p>Alimento húmedo completo para perros adultos de todas las razas. Está preparado con ingredientes de alta calidad y sin adición de conservantes artificiales. Una receta con sabrosos trocitos con pavo ideal para su alimentación, para darle una vida sana a tu perro y vivir momentos especiales.</p>
+          <p>Los perros cachorros necesitan cerca de un sobre de 100 g por cada 0,7 a 0,9 kg de peso corporal al día, repartido en 2 o más comidas. Puedes mezclarlo con alimentos secos para cachorros, pero la cantidad de alimento seco debe ser ajustada para mantenerlo en una condición corporal ideal. Un sobre reemplazará aproximadamente 1/3 taza (de 200 ml) que equivale aproximadamente a 30 g de DOG CHOW® Cachorros seco.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#177048;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Calcio para dientes fuertes.</li>
+            <li class="collection-item">Sin adición de conservantes artificiales.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Lata: 368 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#177048;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>78,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>0,22%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,2%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+    <!-- DOKO -->
+    <div class="section scrollspy" style="background-color:#E31E24;" id="doko">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/doko.png">
+        </div>
+      </div>
+
+
+      <!-- INFORMACION PRODUCTO 9 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/doko_adulto.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOKO®</p>
+          <h4>CARNE ASADA CON ARROZ ADULTOS</h4>
+          <p>PURINA® DOKO® quiere que tanto él como tú disfruten de esos momentos. Empezando por darle color a su plato, con una RECETA LLENA DE PROTEÍNAS, CARBOHIDRATOS Y VITAMINAS; los 4 elementos principales que todo perro necesita para una DIETA 100% COMPLETA Y BALANCEADA en sabrosas y crujientes croquetas.</p>
+          <p>Después de todo, son los momentos sencillos los que más nos divierten y con PURINA® DOKO®, cada momento será sabrosamente divertido.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#E31E24;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Proteínas que fortalecen su cuerpo.</li>
+            <li class="collection-item">Carbohidratos que le dan la energía que necesita.</li>
+            <li class="collection-item">Vitaminas y minerales para mantenerlo sano.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 18 Kg.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#E31E24;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>19,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>7,5%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>5,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>9,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,0% / 2,0%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,8% / 1,4%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 10 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/doko_cachorros.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOKO®</p>
+          <h4>CARNE ASADA CON LECHE CACHORROS</h4>
+          <p>PURINA® DOKO® quiere que tanto él como tú disfruten de esos momentos. Empezando por darle color a su plato, con una RECETA LLENA DE PROTEÍNAS, CARBOHIDRATOS Y VITAMINAS; los 4 elementos principales que todo perro necesita para una DIETA 100% COMPLETA Y BALANCEADA en sabrosas y crujientes croquetas.</p>
+          <p>Después de todo, son los momentos sencillos los que más nos divierten y con PURINA® DOKO®, cada momento será sabrosamente divertido.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#E31E24;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Calcio para dientes fuertes.</li>
+            <li class="collection-item">Sin adición de conservantes artificiales.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#E31E24;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>25,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>9,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>4,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>1,0% / 1,6%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,8% / 1,3%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <div class="section scrollspy" style="background-color:#BA263D;" id="doguitos">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/doguitos.png">
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 12 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/doguitos_bife.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOGUITOS®</p>
+          <h4>DOGUITOS BIFÉ DE CHORIZO 45g.</h4>
+          <p>DOGUITOS® Cortes Especiales son formatos inspirados en cortes de carne con delicioso aroma que encantarán a tu perro.</p>
+          <p>Son bocaditos deliciosos con sabor a suculenta carne a la parrilla como el churrasco, preparados especialmente para él. CON CADA BOCADO SE LE HARÁ AGUA LA BOCA.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#BA263D;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Hecho con carne fresca.</li>
+            <li class="collection-item">Rico en proteína.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 45 g.</td>
+            </tr>
+          </table>
+          
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#BA263D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>32,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>7,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>28,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>0,3% / 2%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,5% / 1%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 13 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/doguitos_tda.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DOGUITOS®</p>
+          <h4>DOGUITOS SABORES 65g.</h4>
+          <p>DOGUITOS® Las Brasas es una línea de deliciosos bocaditos hechos con carne fresca; sus formatos han sido inspirados en el asado y entusiasmarán a tu perro ¡de inicio a fin!</p>
+          <p>Son deliciosos trocitos en forma de bife de chorizo con rico sabor a carne y aroma irresistible. CON CADA TIERNO BOCADO SE LE HARÁ AGUA A LA BOCA.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#BA263D;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Hecho con carne fresca.</li>
+            <li class="collection-item">Rico en proteína.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 65 g.</td>
+            </tr>
+          </table>
+          <br>
+          <div class="flow-text"><b>SABORES</b></div>
+          <table>
+            <tr>
+              
+              <td>Churrasco</td>
+            </tr>
+            <tr><td>Medallones de Carne</td></tr>
+            <tr><td>Tira de Asado</td></tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#BA263D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Proteína Cruda (Min.)</td>
+                <td>32,0%</td>
+              </tr>
+              <tr>
+                <td>Grasa Cruda (Mín.)</td>
+                <td>7,0%</td>
+              </tr>
+              <tr>
+                <td>Fibra Cruda (Máx.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>Humedad (Máx.)</td>
+                <td>28,0%</td>
+              </tr>
+              <tr>
+                <td>Ceniza (Máx.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>Calcio (Mín.)</td>
+                <td>0,3% / 2%</td>
+              </tr>
+              <tr>
+                <td>Fósforo (Mín.)</td>
+                <td>0,5% / 1%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+    </div>
+
+
+
+
+    <div class="section scrollspy" style="background-color:#1C60A7;" id="duroderoer">
+      <div class="container-fluid">
+
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/duroderoer.png" style="width:10em;">
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 14 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/duro_de_roer_hueso.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DURO DE ROER®</p>
+          <h4>DURO DE ROER BONE 95g.</h4>
+          <p>Delicioso snack sabor carne que mantendrá ocupado a tu perro por más tiempo, indicado para perros de razas medianas y grandes.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#1C60A7;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Hecho con carne fresca.</li>
+            <li class="collection-item">Mantiene entretenido a tu perro.</li>
+          </ul>
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 95 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 15 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/ddr_ossinho.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA DURO DE ROER®</p>
+          <h4>DURO DE ROER OSSINHO 105g.</h4>
+          <p>Delicioso snack sabor carne que mantendrá ocupado a tu perro por más tiempo, indicado para perros de razas medianas y grandes.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#1C60A7;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Hecho con carne fresca.</li>
+            <li class="collection-item">Mantiene entretenido a tu perro.</li>
+          </ul>
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 105 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+      </div>
+
+
+    </div>
+    </div>
+  </div>
+
+  <!--PARALLAX 3-->
+  <div class="parallax-container valign-wrapper scrollspy" id="cats" >
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img src="parallax-img/background-cat.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <!--GATOS-->
+    <div class="section scrollspy" style="background-color:#0074C5;" id="catchow">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/catchow.png" style="width:10em;">
+        </div>
+      </div>
+
+
+      <!-- INFORMACION PRODUCTO 16 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/cc_delimix.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA CAT CHOW®</p>
+          <h4>PURINA® CAT CHOW® ADULTOS DELIMIX</h4>
+          <p>El nuevo PURINA® CAT CHOW® ADULTOS DELIMIX CON DEFENSE PLUS ofrece los nutrientes que tu gato necesita para mantenerse fuerte y saludable. Contiene 3 fuentes de proteína, que ayudan a mantener su vitalidad.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#0074C5;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Ayuda a fortalecer las defensas naturales.</li>
+            <li class="collection-item">Contiene 3 fuentes de proteína, que ayudan a mantener su vitalidad.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 500 g.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 21 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#0074C5;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ENERGÍA METABOLIZABLE</td>
+                <td>3.750 KCAL/KG</td>
+              </tr>
+              <tr>
+                <td>PROTEÍNA BRUTA (MÍN.)</td>
+                <td>32,0%</td>
+              </tr>
+              <tr>
+                <td>GRASA BRUTA (MÍN./ MÁX.)</td>
+                <td>11,0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA BRUTA (MÁX.)</td>
+                <td>3,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>MINERALES (MÁX.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN. / MÁX.)</td>
+                <td>1,1% / 1,5%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN. / MÁX.)</td>
+                <td>1,0% /1,4%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <!-- INFORMACION PRODUCTO 17 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/cc_gatitos.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA CAT CHOW®</p>
+          <h4>PURINA® CAT CHOW® GATITOS HASTA 12 MESES</h4>
+          <p>El nuevo PURINA® CAT CHOW® GATITOS DE 1 A 12 MESES, ofrece los nutrientes que tu gatito necesita para un crecimiento sano durante su primer año de vida. Contiene DHA que ayuda a desarrollar su cerebro.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#0074C5;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Ayuda a fortalecer las defensas naturales.</li>
+            <li class="collection-item">Con DHA para favorecer el desarrollo del cerebro.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 500 g.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 15 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#0074C5;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ENERGÍA METABOLIZABLE</td>
+                <td>3.850 KCAL/KG</td>
+              </tr>
+              <tr>
+                <td>PROTEÍNA BRUTA (MÍN.)</td>
+                <td>36,0%</td>
+              </tr>
+              <tr>
+                <td>GRASA BRUTA (MÍN./ MÁX.)</td>
+                <td>11,0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA BRUTA (MÁX.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>MINERALES (MÁX.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN. / MÁX.)</td>
+                <td>1,1% / 1,6%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN. / MÁX.)</td>
+                <td>1,0% /1,5%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    </div>
+
+
+    <div class="section scrollspy" style="background-color:#12486D;" id="felix">
+      <div class="container-fluid">
+
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/felix.png">
+        </div>
+      </div>
+
+      <!-- INFORMACION PRODUCTO 18 -->
+      <div class="row" data-aos="fade-up" style="background-color:white;opacity:0.9;border-radius:10px;margin-bottom:15px;padding-bottom:15px;">
+        <div class="col s12 m12 l2 center" style="">
+          <img src="products-img/cc_gatitos.png" data-aos="fade-right" data-aos-duration="1000" style="width:10em;">
+        </div>
+        <div class="col s12 m12 l10" data-aos="flip-up" data-aos-duration="1000">
+          <p class="flow-text">PURINA CAT CHOW®</p>
+          <h4>PURINA® CAT CHOW® GATITOS HASTA 12 MESES</h4>
+          <p>El nuevo PURINA® CAT CHOW® GATITOS DE 1 A 12 MESES, ofrece los nutrientes que tu gatito necesita para un crecimiento sano durante su primer año de vida. Contiene DHA que ayuda a desarrollar su cerebro.</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#12486D;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Ayuda a fortalecer las defensas naturales.</li>
+            <li class="collection-item">Con DHA para favorecer el desarrollo del cerebro.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l12"><br></div>
+        <div class="col s12 m12 l2"></div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 500 g.</td>
+            </tr>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 15 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>ENERGÍA METABOLIZABLE</td>
+                <td>3.850 KCAL/KG</td>
+              </tr>
+              <tr>
+                <td>PROTEÍNA BRUTA (MÍN.)</td>
+                <td>36,0%</td>
+              </tr>
+              <tr>
+                <td>GRASA BRUTA (MÍN./ MÁX.)</td>
+                <td>11,0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA BRUTA (MÁX.)</td>
+                <td>3,0%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>MINERALES (MÁX.)</td>
+                <td>8,0%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN. / MÁX.)</td>
+                <td>1,1% / 1,6%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN. / MÁX.)</td>
+                <td>1,0% /1,5%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="section scrollspy" style="background-color:#E31E24;" id="gati">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <img src="brands/gati.png">
+        </div>
+        <div class="col s12 m12 l12">
+          <!--<img src="products-img/doko_18kg.png">-->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!--PARALLAX 4-->
+  <div class="parallax-container valign-wrapper scrollspy">
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img src="parallax-img/background3.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <!--CONTACTO-->
+  <div class="scrollspy black-text" id="contact">
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <div class="card" style="background-color:#0064A6;"><div class="card-content">
+            <h5 class="white-text"><i class="fas fa-envelope"></i> Contacto</h5>
+          </div></div>
+
+            <form class="col s12 m12 l12" method="post" action="">
+              <div class="row">
+                <div class="input-field col s12 l6 m6">
+                  <input id="icon_prefix" type="text" name="nombre" class="validate">
+                  <label for="icon_prefix"><i class="fas fa-user fa-lg"></i> &nbsp;Nombre</label>
+                </div>
+                <div class="input-field col s12 l6 m6">
+                  
+                  <input id="icon_lastname" type="text" name="apellido" class="validate">
+                  <label for="icon_lastname"><i class="fas fa-user fa-lg"></i> &nbsp;Apellidos</label>
+                </div>
+              
+                <div class="input-field col s12 l6 m6">
+                  
+                  <input id="icon_email" type="text" class="validate" name="email">
+                  <label for="icon_email"><i class="fas fa-mail-bulk fa-lg"></i> &nbsp;Correo electrónico</label>
+                </div>
+                <div class="input-field col s12 l6 m6">
+                  
+                  <input id="icon_telephone" type="tel" class="validate" name="tel">
+                  <label for="icon_telephone"><i class="fas fa-mobile-alt fa-lg"></i> &nbsp;Teléfono</label>
+                </div>
+              
+                <div class="input-field col s12 l12 m12">
+                  
+                  <textarea id="textarea2" class="materialize-textarea" name="mensaje" data-length="120"></textarea>
+
+                  <label for="textarea2"><i class="fas fa-comment-dots fa-lg"></i> &nbsp;Mensaje</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <button type="submit" class="waves-effect waves-light btn-large" style="background-color:#F3AB36"><i class="material-icons right">send</i>Enviar</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+
+    
+  </div>
+  </div>
+
+
+  <!--UBICACIÓN GOOGLE MAPS-->
+  <div class="scrollspy" id="maps">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.979462331864!2d-73.98380108509384!3d40.762476442463864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f88254f2c3%3A0xc307e150c50c51f7!2sSheraton+New+York+Times+Square+Hotel!5e0!3m2!1ses-419!2scl!4v1547929775029" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+
+  <!--FOOTER-->
+  <footer class="page-footer grey lighten-2 black-text">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>Información adicional de la compañía</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5>Menú</h5>
+          <ul>
+            <li><a class="options2 black-text" href="#index">Inicio</a></li>
+            <li><a class="options2 black-text" href="#aboutus">Sobre nosotros</a></li>
+            <li><a class="options2 black-text" href="#dogs">Perros</a></li>
+            <li><a class="options2 black-text" href="#cats">Gatos</a></li>
+            <li><a class="options2 black-text" href="#contact">Contacto</a></li>
+            <li><a class="options2 black-text" href="#maps">Ubicación</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#!"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container black-text">
+      Powered by <a class="teal-text" href="#">Miguel Garcia</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- boton fixed-->
+  <div class="fixed-action-btn">
+      <a id="back-to-top" class="btn-floating btn-large black scale-transition" style="opacity:0.4">
+        <i class="large material-icons">keyboard_arrow_up</i>
+      </a>
+    </div>
+  </main>
+
+  <!-- Modal1 -->
+  <!--<div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/dc_cachorro.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DOG CHOW Cachorro<br>
+          <b>Tipo:</b> Razas pequeñas<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 3002<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 1.5 Kg.</b><br>
+          <b>Código:</b> 3000<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal2 -->
+  <!--<div id="modal2" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/dc_adulto.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DOG CHOW Adulto<br>
+          <b>Tipo:</b> Razas medianas y grandes<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 3025<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 1.5 Kg.</b><br>
+          <b>Código:</b> 3017<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal3 -->
+  <!--<div id="modal3" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/dc_rp.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DOG CHOW Adulto - Razas pequeñas<br>
+          <b>Tipo:</b> Razas pequeñas<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 3020<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 1.5 Kg.</b><br>
+          <b>Código:</b> 3021<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+
+  <!-- Modal4 -->
+  <!--<div id="modal4" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/doko_adulto.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> Doko Adulto<br>
+          <b>Tipo:</b> Razas medianas y grandes<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 18 Kg.</b><br>
+          <b>Código:</b> 3045<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+
+  <!-- Modal5 -->
+  <!--<div id="modal5" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/doko_cachorros.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> Doko Cachorro<br>
+          <b>Tipo:</b> Razas medianas y grandes<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 3025<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+
+  <!-- Modal6 -->
+  <!--<div id="modal6" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/doko_adulto.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> Doko Adulto<br>
+          <b>Tipo:</b> Razas medianas y grandes<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 3041<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal7 -->
+  <!--<div id="modal7" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/pouch_cachorro.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DOG CHOW POUCH Cachorros<br>
+          <b>Tipo:</b> Todas las razas.<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 100 g.</b><br>
+          <b>Código:</b> 3692<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal8 -->
+  <!--<div id="modal8" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/pouch_carne.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DOG CHOW POUCH Carne Adultos<br>
+          <b>Tipo:</b> Todas las razas.<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 100 g.</b><br>
+          <b>Código:</b> 3097<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal9 -->
+  <!--<div id="modal9" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/pouch_pollo.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> DOG CHOW POUCH Pollo Adultos<br>
+          <b>Tipo:</b> Todas las razas.<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 100 g.</b><br>
+          <b>Código:</b> 3098<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal10 -->
+  <!--<div id="modal10" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/cc_gatitos.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> CAT CHOW Gatitos<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 15 Kg.</b><br>
+          <b>Código:</b> 4007<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 500 g.</b><br>
+          <b>Código:</b> 4004<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal11 -->
+  <!--<div id="modal11" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/cc_delimix.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> CAT CHOW Delimix<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 21 Kg.</b><br>
+          <b>Código:</b> 4004<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 500 g.</b><br>
+          <b>Código:</b> 4600<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal12 -->
+  <!--<div id="modal12" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/gati_pescado.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> GATI Pescado, Arroz y Espinaca<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 15 Kg.</b><br>
+          <b>Código:</b> 4034<br>
+          <hr>
+          <b>Presentación 2:</b> Saco<br>
+          <b>Peso: 1 Kg.</b><br>
+          <b>Código:</b> 4031<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal13 -->
+  <!--<div id="modal13" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/pouch_gatitos.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> FELIX POUCH GATITOS Sensaciones de Carne en Salsa<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 85 g.</b><br>
+          <b>Código:</b> 4769<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal14 -->
+  <!--<div id="modal14" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/pouch_pescado.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> FELIX POUCH Sensaciones Pescado Blanco en Salsa<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 85 g.</b><br>
+          <b>Código:</b> 4062<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal15 -->
+  <!--<div id="modal15" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/pouch_gato_salsa.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> FELIX POUCH Sensaciones Carne en Salsa<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 85 g.</b><br>
+          <b>Código:</b> 4058<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal16 -->
+  <!--<div id="modal16" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/lata_pate.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> FELIX ORIGINAL Paté Sabor Pescado y Atún<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Lata<br>
+          <b>Peso: 156 g.</b><br>
+          <b>Código:</b> 4642<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!-- Modal17 -->
+  <!--<div id="modal17" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      
+      <div class="row">
+        <div class="col s12 m7 l6 center">
+          <img src="products-img/lata_salmon.png">
+        </div>
+        <div class="col s12 m5 l6">
+          <b>Valoración:</b> <i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><i class="fas fa-star yellow-icon"></i><br>
+          <b>Nombre:</b> FELIX ORIGINAL Paté Sabor Salmón<br>
+          <b>Tipo:</b> N/A<br>
+          <hr>
+          <b>Presentación 1:</b> Saco<br>
+          <b>Peso: 156 g.</b><br>
+          <b>Código:</b> 4643<br>
+          <hr>
+          <b>Descripción:</b> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+          
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="index.html" class="modal-close waves-effect waves-green btn-small" style="background-color:#F3AB36">Comprar</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+    </div>
+  </div>-->
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/scrollspy.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
+
+  <script>
+  $(document).ready(function(){
+    $('.parallax').parallax();
+    $('.scrollspy').scrollSpy();
+    $('.sidenav').sidenav();
+    $('.tooltipped').tooltip();
+    $('.modal').modal();
+    $('.dropdown-trigger').dropdown({
+      coverTrigger: false,
+    });
+
+
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, {
+      scrollOffset: 50,
+      throttle:2000
+    });
+
+  });
+
+  if ($('#back-to-top').length) {
+  var scrollTrigger = 100, // px
+    backToTop = function() {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > scrollTrigger) {
+        $('#back-to-top').removeClass('scale-out');
+      } else {
+        $('#back-to-top').addClass('scale-out');
+      }
+    };
+  backToTop();
+  $(window).on('scroll', function() {
+    backToTop();
+  });
+  
+  $('#back-to-top').on('click', function(e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 0
+    }, 700);
+  });
+}
+       </script>
+
+  </body>
+</html>
