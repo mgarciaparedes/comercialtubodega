@@ -21,9 +21,58 @@
          border:1px solid #e0e0e0;
         border-radius:5px;
       }
+
       a i.fas.fa-times-circle:hover{
         color:#CACFD2;
       }
+
+      button.btn-hover{
+        background-color:transparent;
+        color:white;
+        font-weight: bold;
+      }
+
+      button.btn-hover:hover{
+        background-color:white;
+        color:black;
+        font-weight: bold;
+      }
+
+      button.btn-hover:focus{
+        background-color:white;
+        color:black;
+        font-weight: bold;
+      }
+
+      @font-face {
+      font-family: "Highest";
+      src: url("fonts/Highest.ttf");
+      }
+
+      .no-shadow{
+         -webkit-box-shadow: none;
+          box-shadow: none;
+      }
+
+      .loop{
+        position: relative;
+        -webkit-animation: mymove 2s infinite; /* Safari 4.0 - 8.0 */
+        animation: mymove 2s infinite;
+      }
+
+      /* Safari 4.0 - 8.0 */
+      @-webkit-keyframes mymove {
+        0% {bottom: 0px;}
+        50% {bottom: 20px;}
+        100%{bottom:0px;}
+      }
+
+      @keyframes mymove {
+        0% {bottom: 0px;}
+        50% {bottom: 20px;}
+        100%{bottom:0px;}
+      }
+
 
     }
   </style>
@@ -32,29 +81,31 @@
 <body>
 
   <!--BARRA DE NAVEGACIÓN-->
+  <div style="background-image: url(parallax-img/background5.png);background-position:absolute;width:100%;">
   <div class="navbar-fixed">
-  <nav class="white navbar-fixed" role="navigation">
+  <nav class="navbar-fixed no-shadow" role="navigation">
     <div class="nav-wrapper" style="padding-right:5%;padding-left:5%">
 
 
       <a id="logo-container" href="#index" class="brand-logo">
-        <img src="img/logo.png" style="width: 7em;">
+        <!--<img src="img/logo.png" style="width: 10em;">-->
+        <div class="logo-img"></div>
       </a>
 
 
       <ul class="right hide-on-med-and-down bold">
 
-        <li class="hoverable"><a class="navbar-option" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
+        <li class="hoverable"><a class="cambiocolor white-text navbar-option" href="#index"><i class="fas fa-home fa-lg"></i> Inicio</a></li>
 
-        <li class="hoverable"><a class="navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
+        <li class="hoverable"><a class="cambiocolor white-text navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
 
-        <li class="hoverable"><a class="dropdown-trigger navbar-option" href="#!" data-target="dropdown1"><i class="fas fa-dog fa-lg"></i>  Perros <i class="fas fa-sort-down fa-lg"></i></a></li>
+        <li class="hoverable"><a class="cambiocolor white-text dropdown-trigger navbar-option" href="#!" data-target="dropdown1"><i class="fas fa-dog fa-lg"></i>  Perros <i class="fas fa-sort-down fa-lg"></i></a></li>
 
-        <li class="hoverable"><a class="dropdown-trigger navbar-option" href="#!" data-target="dropdown2"><i class="fas fa-cat fa-lg"></i>  Gatos <i class="fas fa-sort-down fa-lg"></i></a></li>
+        <li class="hoverable"><a class="cambiocolor white-text dropdown-trigger navbar-option" href="#!" data-target="dropdown2"><i class="fas fa-cat fa-lg"></i>  Gatos <i class="fas fa-sort-down fa-lg"></i></a></li>
 
-        <li class="hoverable"><a class="navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
+        <li class="hoverable"><a class="cambiocolor white-text navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
 
-        <li class="hoverable"><a class="navbar-option" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
+        <li class="hoverable"><a class="cambiocolor white-text navbar-option" href="#maps"><i class="fas fa-map-marker-alt fa-lg"></i> Ubicación</a></li>
 
       </ul>
 
@@ -90,7 +141,7 @@
         </li>
 
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i style="color:#F3AB36;" class="material-icons">menu</i></a>
     </div>
   </nav>
   </div>
@@ -98,64 +149,38 @@
     
   </div>
 
-  <!--PARALLAX 1-->
-  <div id="index-banner" class="parallax-container animated fadeIn" style="height:600px;">
-    <div class="section no-pad-bot">
-      <div class="container scrollspy">
-        <!--<div class="row transparente">
-          <div class="col s12 m12 l12 animated fadeInRight">
-            <div class="card black opacity">
-            <div class="card-content">
-              <h5 class="header white-text">
-                "Nuestra mascota, nuestra familia"
-              </h5>
-            </div>
-            </div>
-          </div>
-        </div>
-        <div class="row transparente">
-          <div class="col s12 m4 l4 animated fadeInRight">
-            <div class="card opacity">
-            <div class="card-content" style="opacity:1">
-              
-            </div>
-            </div>
-          </div>
-        </div>
+  <!-- PRINCIPAL -->
+  <div id="index" class="scrollspy" style="height:600px;">
+    <div class="section">
+        <div class="container white-text center" style="padding-top:100px;">
+          <h4 data-aos="fade-up" style="font-family:'Highest';color:#F3AB36">Dale un gusto a tu mascota</h2>
 
-        <div class="row transparente">
-          <a class="waves-effect waves-light btn-large" style="background-color:#D4952E;" href="#aboutus">Ven y conoce más</a>
-        </div>
-        <div class="row transparente">
+          <h3 data-aos="fade-up" data-aos-delay="500">Comercial Tu bodega</h1>
+
+          <hr style="width:20%;opacity:0.3;">
+          <hr style="width:30%;opacity:0.3;">
           
+
+          <h5 data-aos="fade-up" data-aos-delay="1000">Distribuidor Oficial de Purina</h3>
+            <br>
+          <a href="#aboutus" class="loop"><i id="aboutus" data-aos="fade-up" data-aos-delay="1500" style="color:#F3AB36" class="fas fa-chevron-down fa-3x"></i></a>
+
         </div>
-        <div class="row">
-          
-              <h5 class="header white-text center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit
-              </h5>
-            
-        </div>
-        <div class="row">
-          <a class="waves-effect waves-light btn-large black-text" style="background-color:#F3AB36;" href="#aboutus">Ven y conoce más</a>
-        </div>-->
-      </div>
-    </div>
-    <div class="parallax scrollspy" id="index"><img src="parallax-img/background.png" alt="Unsplashed background img 1"></div>
+   </div>
   </div>
 
   <!--SECCIÓN CONOCE A TU BODEGA-->
   <div class="color-fondo">
-  <div class="container-fluid scrollspy" id="aboutus">
+  <div class="container scrollspy" id="aboutus">
     <div class="section">
 
       <div class="row">
         <div class="col s12 m12 l6"  data-aos="flip-up" data-aos-duration="1000">
-          <div class="card white-text center" style="background-color:#F3AB36">
-            <div class="card-content">
-              <h5><img src="img/logo_texture.png" style="width:2em;"> CONÓCENOS</h5>
-            </div>
-          </div>
+         
+            
+              <div class="card color-fondo white-text center" style="background-color:#F3AB36"><div class="card-content"><h5><i class="fas fa-industry"></i> CONOCENOS</h5></div></div>
+            
+          
           <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -209,14 +234,15 @@
     </div>
   </div>
   </div>
+  </div>
 
 
   <!--PARALLAX 2-->
-  <div class="parallax-container valign-wrapper scrollspy" id="dogs" >
+  <!--<div class="parallax-container valign-wrapper scrollspy" id="dogs" >
     <div class="section no-pad-bot">
     </div>
     <div class="parallax"><img src="parallax-img/background1.png" alt="Unsplashed background img 2"></div>
-  </div>
+  </div>-->
 
 
   <!--PERROS-->
@@ -355,13 +381,17 @@
 
       <div class="row" data-aos="zoom-in" data-aos-duration="1500">
         <div class="carousel">
-          <a class="carousel-item" href=""><img src="products-img/pouch_gato_salsa.png"></a>
-          <a class="carousel-item" href=""><img src="products-img/pouch_gato_salsa.png"></a>
-          <a class="carousel-item" href=""><img src="products-img/pouch_gato_salsa.png"></a>
-          <a class="carousel-item" href=""><img src="products-img/lata_pate_fondo.png"></a>
-          <a class="carousel-item" href=""><img src="products-img/lata_salmon_fondo.png"></a>
-          <!--<a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-          <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>-->
+          <a class="carousel-item modal-trigger" href="#modal24"><img src="products-img/pouch_pb.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal25"><img src="products-img/pouch_pavo.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal26"><img src="products-img/pouch_salmon.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal27"><img src="products-img/pouch_carne_felix.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal28"><img src="products-img/pouch_sardina.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal29"><img src="products-img/pouch_pollo_higado.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal30"><img src="products-img/pouch_gatitos_carne.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal31"><img src="products-img/pouch_gatitos_pescado.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal32"><img src="products-img/lata_pescado.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal33"><img src="products-img/lata_salmon.png"></a>
+          <a class="carousel-item modal-trigger" href="#modal34"><img src="products-img/lata_pavo.png"></a>
         </div>
         
       </div>
@@ -381,90 +411,74 @@
       <div class="row" data-aos="zoom-in" data-aos-duration="1500">
         <div class="col s12 m12 l12">
           <div class="carousel">
-            <a class="carousel-item" href=""><img src="products-img/gati_pescado.png"></a>
-            <a class="carousel-item" href=""><img src="products-img/gati_cam.png"></a>
-            <a class="carousel-item" href=""><img src="products-img/gati_pollo.png"></a>
-            <!--<a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-            <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>-->
+            <a class="carousel-item modal-trigger" href="#modal35"><img src="products-img/gati_pescado.png"></a>
+            <a class="carousel-item modal-trigger" href="#modal36"><img src="products-img/gati_cam.png"></a>
+            <a class="carousel-item modal-trigger" href="#modal37"><img src="products-img/gati_pollo.png"></a>
           </div>
-        </div>
-        <!--<div class="col s12 m12 l6">
-          <div class="card">
-            <div class="card-content">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-              <a class="btn">Ver más</a>
-            </div>
-          </div>
-        </div>--> 
+        </div> 
      </div>
     </div>
     </div>
   </div>
 
   <!--PARALLAX 4-->
-  <div class="parallax-container valign-wrapper scrollspy">
+  <!--<div class="parallax-container valign-wrapper scrollspy">
     <div class="section no-pad-bot">
     </div>
     <div class="parallax"><img src="parallax-img/background3.png" alt="Unsplashed background img 2"></div>
-  </div>
+  </div>-->
 
   <!--CONTACTO-->
-  <div class="scrollspy black-text" id="contact">
-  <div class="container">
-    <div class="section">
-
+    <div class="section" style="background-image: url(parallax-img/background4.png);background-size: cover;">
+      <div class="scrollspy white-text" id="contact">
+      <div class="container">
       <div class="row">
         <div class="col s12 m12 l12 center">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <div class="card" style="background-color:#0064A6;"><div class="card-content">
-            <h5 class="white-text"><i class="fas fa-envelope"></i> Contacto</h5>
-          </div></div>
+          <div style="color:white;">
+            <h1 style="font-family:'Highest'">Contactanos</h1>
+            <hr style="border-color:#F3AB36;">
+            <br><br>
+            </div>
 
-            <form class="col s12 m12 l12" method="post" action="">
+            <form class="col s12 m12 l12 white-text" method="post" action="">
               <div class="row">
                 <div class="input-field col s12 l6 m6" data-aos="flip-right" data-aos-duration="2000">
-                  <input id="icon_prefix" type="text" name="nombre" class="validate">
+                  <input id="icon_prefix" type="text" name="nombre" class="white-text validate">
                   <label for="icon_prefix"><i class="fas fa-user fa-lg"></i> &nbsp;Nombre</label>
                 </div>
                 <div class="input-field col s12 l6 m6" data-aos="flip-left" data-aos-duration="2000">
                   
-                  <input id="icon_lastname" type="text" name="apellido" class="validate">
+                  <input id="icon_lastname" type="text" name="apellido" class="white-text validate">
                   <label for="icon_lastname"><i class="fas fa-user fa-lg"></i> &nbsp;Apellidos</label>
                 </div>
               
                 <div class="input-field col s12 l6 m6" data-aos="flip-right" data-aos-duration="2000">
                   
-                  <input id="icon_email" type="text" class="validate" name="email">
+                  <input id="icon_email" type="text" class="white-text validate" name="email">
                   <label for="icon_email"><i class="fas fa-mail-bulk fa-lg"></i> &nbsp;Correo electrónico</label>
                 </div>
                 <div class="input-field col s12 l6 m6" data-aos="flip-left" data-aos-duration="2000">
                   
-                  <input id="icon_telephone" type="tel" class="validate" name="tel">
+                  <input id="icon_telephone" type="tel" class="white-text validate" name="tel">
                   <label for="icon_telephone"><i class="fas fa-mobile-alt fa-lg"></i> &nbsp;Teléfono</label>
                 </div>
               
                 <div class="input-field col s12 l12 m12" data-aos="flip-left" data-aos-duration="2000">
-                  
-                  <textarea id="textarea2" class="materialize-textarea" name="mensaje" data-length="120"></textarea>
-
+                  <textarea id="textarea2" class="white-text materialize-textarea" name="mensaje" data-length="120"></textarea>
                   <label for="textarea2"><i class="fas fa-comment-dots fa-lg"></i> &nbsp;Mensaje</label>
                 </div>
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <button type="submit" class="waves-effect waves-light btn-large" style="background-color:#F3AB36"><i class="material-icons right">send</i>Enviar</button>
+                  <button type="submit" class="waves-effect waves-light btn-large btn-hover" style="border:2px solid white;"><i class="material-icons right">send</i>Enviar</button>
                 </div>
               </div>
             </form>
         </div>
       </div>
 
-    
+    </div>
   </div>
   </div>
 
@@ -2042,7 +2056,7 @@
         <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
         <div class="col s12 m12 l12">
           <div class="center">
-            <img src="brands/catchow.png" style="width:30em;">
+            <img src="brands/catchow.png" style="width:50%;">
             <br><br>
             <h4 class="center">PURINA® CAT CHOW® ADULTOS CARNE</h4>
           </div>
@@ -2135,7 +2149,7 @@
         <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
         <div class="col s12 m12 l12">
           <div class="center">
-            <img src="brands/catchow.png" style="width:30em;">
+            <img src="brands/catchow.png" style="width:50%;">
             <br><br>
             <h4 class="center">PURINA® CAT CHOW® ADULTOS DELIMIX</h4>
           </div>
@@ -2226,7 +2240,7 @@
         <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
         <div class="col s12 m12 l12">
           <div class="center">
-            <img src="brands/catchow.png" style="width:30em;">
+            <img src="brands/catchow.png" style="width:50%;">
             <br><br>
             <h4 class="center">PURINA® CAT CHOW® GATITOS HASTA 12 MESES</h4>
           </div>
@@ -2246,7 +2260,7 @@
         </div>
         <div class="col s12 m12 l9"><br></div>
         
-        <div class="col s12 m12 l4" data-aos="flip-up" data-aos-duration="1000">
+        <div class="col s12 m12 l4">
           <div class="flow-text"><b>PRESENTACIONES</b></div>
           <table>
             <tr>
@@ -2260,7 +2274,7 @@
           </table>
           <br>
         </div>
-        <div class="col s12 m12 l5" data-aos="flip-up" data-aos-duration="1000">
+        <div class="col s12 m12 l5">
           
           <table class="striped highlight">
             <thead style="background-color:#0074C5;color:white;">
@@ -2309,6 +2323,1144 @@
     </div>
   </div>
 
+
+  <!-- Modal 24 -->
+  <div id="modal24" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">SENSACIONES PESCADO BLANCO EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_pescado.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍX)</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX)</td>
+                <td>2,7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN)</td>
+                <td>0,20%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN)</td>
+                <td>0,16%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 25 -->
+  <div id="modal25" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">SENSACIONES DE PAVO EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_pavo.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍX)</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX)</td>
+                <td>2,7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN)</td>
+                <td>0,20%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN)</td>
+                <td>0,16%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 26 -->
+  <div id="modal26" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">SENSACIONES DE SALMÓN Y PAVO EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_salmon.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍX)</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX)</td>
+                <td>2,7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN)</td>
+                <td>0,20%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN)</td>
+                <td>0,16%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 27 -->
+  <div id="modal27" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">SENSACIONES DE CARNE EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_carne_felix.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍX)</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX)</td>
+                <td>2,7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN)</td>
+                <td>0,20%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN)</td>
+                <td>0,16%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 28 -->
+  <div id="modal28" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">SENSACIONES DE SARDINA EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_sardina.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍX)</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX)</td>
+                <td>2,7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN)</td>
+                <td>0,20%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN)</td>
+                <td>0,16%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 29 -->
+  <div id="modal29" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">SENSACIONES DE POLLO E HIGADO EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_pollo_higado.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍX)</td>
+                <td>2%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX)</td>
+                <td>2,7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN)</td>
+                <td>0,20%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN)</td>
+                <td>0,16%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 30 -->
+  <div id="modal30" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">GATITOS SENSACIONES DE CARNE EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_gatitos_carne.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HUMEDAD (MAX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÁX)</td>
+                <td>2.0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1.5%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS/MINERALES (MÁX))</td>
+                <td>2.7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN/MÁX)</td>
+                <td>0.20% / 0.60%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN/MÁX)</td>
+                <td>0.10% / 0.40%</td>
+              </tr>
+              <tr>
+                <td>TAURINA (MÍN) </td>
+                <td>0.05%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 31 -->
+  <div id="modal31" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">GATITOS SENSACIONES DE PESCADO EN SALSA</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/pouch_gatitos_carne.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso alimento húmedo completo y balanceado para gatos adultos, compuesto por trocitos de pescado blanco en salsa, para deleitar hasta al paladar gatuno más exigente. La ración promedio es de 3 sobres de 85 g por cada 4 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Bolsa: 85 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HUMEDAD (MAX)</td>
+                <td>80%</td>
+              </tr>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÁX)</td>
+                <td>2.0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX)</td>
+                <td>1.5%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS/MINERALES (MÁX))</td>
+                <td>2.7%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN/MÁX)</td>
+                <td>0.20% / 0.60%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN/MÁX)</td>
+                <td>0.10% / 0.40%</td>
+              </tr>
+              <tr>
+                <td>TAURINA (MÍN) </td>
+                <td>0.05%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 32 -->
+  <div id="modal32" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">PATÉ DE PESCADO Y ATÚN</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/lata_pescado.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Deliciosa combinación de sabores de pescado y atún, en un suave y agradable paté que tendrán a tu gato esperando con impaciencia la hora de comer todos los días. La ración promedio es una lata de 156 g por cada 2,8 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/lata.png" style="width:3em;"></td>
+              <td>Lata: 156 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN.)</td>
+                <td>11%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍN.)</td>
+                <td>4%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX.)</td>
+                <td>1,0%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>78%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX.)</td>
+                <td>3,5%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN.)</td>
+                <td>0,22%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN.)</td>
+                <td>0,18%</td>
+              </tr>
+              <tr>
+                <td>TAURINA (MÍN) </td>
+                <td>0.05%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 33 -->
+  <div id="modal33" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">PATÉ DE SALMÓN</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/lata_salmon.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso paté sabor a salmón, con una suave y agradable textura tendrán a tu gato esperando la hora de comer todos los días. La ración promedio es una lata de 156 g por cada 2,8 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/lata.png" style="width:3em;"></td>
+              <td>Lata: 156 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN.)</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍN.)</td>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX.)</td>
+                <td>1,0%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>78%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX.)</td>
+                <td>3%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN.)</td>
+                <td>0,22%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN.)</td>
+                <td>0,18%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal 34 -->
+  <div id="modal34" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/felix.png" style="">
+            <br><br>
+            <h4 class="center">PATÉ DE PAVO Y MENUDENCIAS</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/lata_pavo.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>Delicioso paté de pavo y las menudencias, con una suave y agradable textura tendrán a tu gato esperando la hora de comer todos los días. La ración promedio es una lata de 156 g por cada 2,8 kg de peso de su gato adulto, repartido en 2 o más comidas. Las necesidades individuales pueden variar y deben ser ajustadas para mantener el peso saludable de su gato.</p> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/lata.png" style="width:3em;"></td>
+              <td>Lata: 156 g.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#12486D;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>PROTEÍNA CRUDA (MÍN.)</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td>GRASA CRUDA (MÍN.)</td>
+                <td>5%</td>
+              </tr>
+              <tr>
+                <td>FIBRA CRUDA (MÁX.)</td>
+                <td>1,0%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>78%</td>
+              </tr>
+              <tr>
+                <td>CENIZAS (MÁX.)</td>
+                <td>3%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN.)</td>
+                <td>0,22%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN.)</td>
+                <td>0,18%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 35 -->
+  <div id="modal35" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/gati.png">
+            <br><br>
+            <h4 class="center">PURINA® GATI® ADULTOS SABORES CASEROS</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/gati_pescado.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>El nuevo GATI SABORES CASEROS PESCADO, ARROZ Y ESPINACA ofrece los nutrientes que tu gato necesita para mantenerse fuerte y saludable. Su fórmula contiene entre sus ingredientes proteínas de la carne, naturalmente ricas en hierro, que lo ayudan a desarrollar músculos fuertes</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#E31E24;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Con antioxidantes naturales que ayudan a las defensas del organismo, manteniendo un sistema inmune elevado.</li>
+            <li class="collection-item">Con proteína de alta calidad y digestibilidad.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 15 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#E31E24;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr>
+                <td>PROTEÍNA BRUTA (MÍN.)</td>
+                <td>32,0%</td>
+              </tr>
+              <tr>
+                <td>GRASA BRUTA (MÍN./ MÁX.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA BRUTA (MÁX.)</td>
+                <td>3,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>MINERALES (MÁX.)</td>
+                <td>8,5%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN. / MÁX.)</td>
+                <td>1,0% / 1,5%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN. / MÁX.)</td>
+                <td>0,8% / 1,4%</td>
+              </tr>
+              <tr>
+                <td>TAURINA (MÍN.)</td>
+                <td>0,13%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 36 -->
+  <div id="modal36" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/gati.png">
+            <br><br>
+            <h4 class="center">PURINA® GATI® ADULTOS SABORES CASEROS</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/gati_cam.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>El nuevo GATI SABORES CASEROS CARNE, ARROZ Y MAIZ ofrece los nutrientes que tu gato necesita para mantenerse fuerte y saludable. Su fórmula contiene entre sus ingredientes proteínas de la carne, naturalmente ricas en hierro, que lo ayudan a desarrollar músculos fuertes</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#E31E24;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Con antioxidantes naturales que ayudan a las defensas del organismo, manteniendo un sistema inmune elevado.</li>
+            <li class="collection-item">Con proteína de alta calidad y digestibilidad.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+            <tr>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 15 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#E31E24;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr>
+                <td>PROTEÍNA BRUTA (MÍN.)</td>
+                <td>32,0%</td>
+              </tr>
+              <tr>
+                <td>GRASA BRUTA (MÍN./ MÁX.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA BRUTA (MÁX.)</td>
+                <td>3,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>MINERALES (MÁX.)</td>
+                <td>8,5%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN. / MÁX.)</td>
+                <td>1,0% / 1,5%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN. / MÁX.)</td>
+                <td>0,8% / 1,4%</td>
+              </tr>
+              <tr>
+                <td>TAURINA (MÍN.)</td>
+                <td>0,13%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal 37 -->
+  <div id="modal37" class="modal" style="overflow: auto;">
+    <div class="modal-content">
+      <div class="row">
+        <a href="#!" style="color:grey;" class="right modal-close"><i class="fas fa-times-circle fa-4x"></i></a>
+        <div class="col s12 m12 l12">
+          <div class="center">
+            <img src="brands/gati.png">
+            <br><br>
+            <h4 class="center">PURINA® GATI® ADULTOS SABORES CASEROS</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l3 center">
+          <img src="products-img/gati_pollo.png" style="width:100%;">
+        </div>
+        <div class="col s12 m12 l9">
+          <p>El nuevo GATI SABORES CASEROS POLLO, ZANAHORIA Y ESPINACA ofrece los nutrientes que tu gato necesita para mantenerse fuerte y saludable. Su fórmula contiene entre sus ingredientes proteínas de la carne, naturalmente ricas en hierro, que lo ayudan a desarrollar músculos fuertes</p>
+          <ul class="collection with-header">
+            <li class="collection-header" style="background-color:#E31E24;color:white;"><h4>Beneficios</h4></li>
+            <li class="collection-item">Con antioxidantes naturales que ayudan a las defensas del organismo, manteniendo un sistema inmune elevado.</li>
+            <li class="collection-item">Con proteína de alta calidad y digestibilidad.</li>
+          </ul> 
+        </div>
+        <div class="col s12 m12 l9"><br></div>
+        
+        <div class="col s12 m12 l4">
+          <div class="flow-text"><b>PRESENTACIONES</b></div>
+          <table>
+              <td><img src="products-img/saco.png" style="width:1em;"></td>
+              <td>Saco: 15 Kg.</td>
+            </tr>
+          </table>
+          <br>
+        </div>
+        <div class="col s12 m12 l5">
+          
+          <table class="striped highlight">
+            <thead style="background-color:#E31E24;color:white;">
+              <tr>
+                  <th>Ingrediente</th>
+                  <th>Porcentaje</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+              <tr>
+                <td>PROTEÍNA BRUTA (MÍN.)</td>
+                <td>32,0%</td>
+              </tr>
+              <tr>
+                <td>GRASA BRUTA (MÍN./ MÁX.)</td>
+                <td>10,0%</td>
+              </tr>
+              <tr>
+                <td>FIBRA BRUTA (MÁX.)</td>
+                <td>3,5%</td>
+              </tr>
+              <tr>
+                <td>HUMEDAD (MÁX.)</td>
+                <td>12,0%</td>
+              </tr>
+              <tr>
+                <td>MINERALES (MÁX.)</td>
+                <td>8,5%</td>
+              </tr>
+              <tr>
+                <td>CALCIO (MÍN. / MÁX.)</td>
+                <td>1,0% / 1,5%</td>
+              </tr>
+              <tr>
+                <td>FÓSFORO (MÍN. / MÁX.)</td>
+                <td>0,8% / 1,4%</td>
+              </tr>
+              <tr>
+                <td>TAURINA (MÍN.)</td>
+                <td>0,13%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</div>
 
   <!--FOOTER-->
   <footer class="page-footer grey lighten-2 black-text">
@@ -2380,6 +3532,10 @@
     $('.carousel').carousel({
       indicators: true,
     });
+    $('.carousel.carousel-slider').carousel({
+      indicators: true,
+      fullWidth: true
+    });
     $('.modal').modal();
     $('.dropdown-trigger').dropdown({
       coverTrigger: false,
@@ -2392,6 +3548,30 @@
       scrollOffset: 50,
       throttle:2000
     });
+
+  });
+
+  $(window).scroll(function(){
+
+            if($(window).scrollTop()>400){
+              $('nav').addClass('white');
+              $('nav').removeClass('no-shadow');
+              $('.cambiocolor').removeClass('white-text');
+              
+             
+            }else{
+              $('nav').removeClass('white');
+              $('nav').addClass('no-shadow');
+              $('.cambiocolor').addClass('white-text');
+              
+              
+            }
+
+            /*if($(window).scroll()==400){
+              $('nav').addClass('white');
+              $('nav').removeClass('no-shadow');
+              $('a').removeClass('white-text');
+            }*/
 
   });
 
