@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
   <link rel="icon" type="image/png" href="img/icono.png" />
 
   <style type="text/css">
@@ -49,6 +52,16 @@
       src: url("fonts/Highest.ttf");
       }
 
+      @font-face {
+      font-family: "Good Brush";
+      src: url("fonts/Good Brush.ttf");
+      }
+
+      @font-face {
+      font-family: "Bloomer";
+      src: url("fonts/Bloomer.otf");
+      }
+
       .no-shadow{
          -webkit-box-shadow: none;
           box-shadow: none;
@@ -76,7 +89,9 @@
 
     }
   </style>
-
+  <script type="text/javascript">
+    
+  </script>
 </head>
 <body>
 
@@ -88,8 +103,8 @@
 
 
       <a id="logo-container" href="#index" class="brand-logo">
-        <!--<img src="img/logo.png" style="width: 10em;">-->
-        <div class="logo-img"></div>
+        <img src="img/logo_texture.png" style="width: 4em;" id="logosincolor">
+        <img src="img/logo.png" class="hide" style="width: 5em" id="logocolor">
       </a>
 
 
@@ -99,9 +114,9 @@
 
         <li class="hoverable"><a class="cambiocolor white-text navbar-option" href="#aboutus"><i class="fas fa-warehouse fa-lg"></i> Conoce Tu Bodega</a></li>
 
-        <li class="hoverable"><a class="cambiocolor white-text dropdown-trigger navbar-option" href="#!" data-target="dropdown1"><i class="fas fa-dog fa-lg"></i>  Perros <i class="fas fa-sort-down fa-lg"></i></a></li>
+        <li class="hoverable"><a class="cambiocolor white-text dropdown-trigger navbar-option" href="#dogs" data-target="dropdown1"><i class="fas fa-dog fa-lg"></i>  Perros <i class="fas fa-sort-down fa-lg"></i></a></li>
 
-        <li class="hoverable"><a class="cambiocolor white-text dropdown-trigger navbar-option" href="#!" data-target="dropdown2"><i class="fas fa-cat fa-lg"></i>  Gatos <i class="fas fa-sort-down fa-lg"></i></a></li>
+        <li class="hoverable"><a class="cambiocolor white-text dropdown-trigger navbar-option" href="#cats" data-target="dropdown2"><i class="fas fa-cat fa-lg"></i>  Gatos <i class="fas fa-sort-down fa-lg"></i></a></li>
 
         <li class="hoverable"><a class="cambiocolor white-text navbar-option" href="#contact"><i class="fas fa-file-signature fa-lg"></i> Contacto</a></li>
 
@@ -155,7 +170,7 @@
         <div class="container white-text center" style="padding-top:100px;">
           <h4 data-aos="fade-up" style="font-family:'Highest';color:#F3AB36">Dale un gusto a tu mascota</h2>
 
-          <h3 data-aos="fade-up" data-aos-delay="500" style="font-family: Arial, Helvetica, sans-serif;">COMERCIAL TU BODEGA</h1>
+          <h1 data-aos="fade-up" data-aos-delay="500" style="font-family:'Good Brush'">COMERCIAL TU BODEGA</h1>
 
           <hr style="width:20%;opacity:0.3;">
           <hr style="width:30%;opacity:0.3;">
@@ -175,30 +190,31 @@
     <div class="section">
 
       <div class="row">
-        <div class="col s12 m12 l6"  data-aos="fade-up" data-aos-duration="1000">
+        <div class="col s12 m12 l12" data-aos="fade-up">
 
           <div class="center" style="font-family:'Highest';color:#F3AB36"><h2>Conocenos</h2></div>
           <hr style="width:20%;opacity:0.3;">
           <hr style="width:30%;opacity:0.3;">
-
+          <!--<div class="center"><img style="width:50%;" src="img/logo.png"></div>-->
           <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.</i></p>
+          cillum dolore eu fugiat nulla pariatur.
+          </i></p>
         </div>
-          <div class="col s12 m6 l6 center" data-aos="fade-left" data-aos-duration="1000">
+          <!--<div class="col s12 m6 l6 center" data-aos="fade-left" data-aos-duration="1000">-->
              <!--<img src="img/logo.png" class="hide-on-med-and-down" style="width:100%;height:220px;">-->
              <!--<img src="parallax-img/background.png" class="hide-on-med-and-down" style="width:100%;height:300px;">-->
-          </div>
+          <!--</div>-->
         </div>
 
       <div class="row">
-        <div class="col s12 m12 l6 center" data-aos="fade-right" data-aos-duration="1000">
+        <!--<div class="col s12 m12 l6 center" data-aos="fade-right" data-aos-duration="1000">-->
           <!--<img src="parallax-img/background.png" class="hide-on-med-and-down" style="width:100%;height:300px;">-->
           <!--<img src="img/aa.png" class="hide-on-med-and-down" style="width:100%;height:220px;">-->
-        </div>
-        <div class="col s12 m12 l6" data-aos="fade-up" data-aos-duration="1000">
+        <!--</div>-->
+        <div class="col s12 m12 l12" data-aos="fade-up">
           <div class="center" style="font-family:'Highest';color:#008551"><h2>Nuestra Mision</h2></div>
           <hr style="width:20%;opacity:0.3;">
           <hr style="width:30%;opacity:0.3;">
@@ -210,7 +226,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m12 l6" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col s12 m12 l12" data-aos="fade-up">
           <div class="center" style="font-family:'Highest';color:#0064A6"><h2>Nuestra Vision</h2></div>
           <hr style="width:20%;opacity:0.3;">
           <hr style="width:30%;opacity:0.3;">
@@ -220,38 +236,93 @@
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
           cillum dolore eu fugiat nulla pariatur.</i></p>
         </div>
-          <div class="col s12 m6 l6 justify" data-aos="fade-left" data-aos-duration="2000">
+          <!--<div class="col s12 m6 l6 justify" data-aos="fade-left" data-aos-duration="2000">-->
             <!--<img src="img/growth3.png"  class="hide-on-med-and-down" style="width:100%;height:220px;">-->
-          </div>
+          <!--</div>-->
         </div>
       <div class="row">
-        <div class="col s12 m6 l6 justify" data-aos="fade-right" data-aos-duration="1000">
+        <!--<div class="col s12 m6 l6 justify" data-aos="fade-right" data-aos-duration="1000">-->
           <!--<img src="img/user_male.png"  class="hide-on-med-and-down" style="padding-right:15%;padding-left:15%;width:100%;height:220px;">-->
-        </div>
-        <div class="col s12 m12 l6 justify" data-aos="fade-up" data-aos-duration="1000">
-          
+        <!--</div>-->
+        <div class="col s12 m12 l12 justify" data-aos="fade-up">
           <div class="center" style="font-family:'Highest';color:#F3AB36"><h2>Nuestros Valores</h2></div>
           <hr style="width:20%;opacity:0.3;">
           <hr style="width:30%;opacity:0.3;">
-          <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur.</i></p>
+          <br>
+        </div>
+        <div class="col s12 m3 l3 center" data-aos="fade-left">
+          <div class=""><i class="fas fa-phone fa-4x"></i></div>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col s12 m3 l3 center" data-aos="fade-left" data-aos-delay="250">
+          
+          <div class=""><i class="fas fa-user-tie fa-4x"></i></div>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col s12 m3 l3 center" data-aos="fade-left" data-aos-delay="500">
+          
+          <div class=""><i class="fas fa-truck-moving fa-4x"></i></div>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col s12 m3 l3 center" data-aos="fade-left" data-aos-delay="750">
+          
+          <div class=""><i class="far fa-heart fa-4x"></i></div>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
   </div>
   </div>
   </div>
+</div>
 
 
-  <!--PARALLAX 2-->
-  <!--<div class="parallax-container valign-wrapper scrollspy" id="dogs" >
-    <div class="section no-pad-bot">
+<!-- SECCIÓN NUESTRAS MARCAS-->
+<div class="section">
+  <div class="container">
+    <div class="row center">
+      <h2 style="font-family:'Highest';" data-aos="zoom-in">Nuestras Marcas</h2>
+      <hr style="width:20%;opacity:0.3;">
+      <hr style="width:30%;opacity:0.3;">
+      <br><br>
+      <div class="autoplay">
+        <div style="padding:10px;"><img src="brands/dogchow.png" style="width:100%"></div>
+        <div style="padding:10px;"><img src="brands/doko.png" style="width:100%"></div>
+        <div style="padding:10px;"><img src="brands/doguitos.png" style="width:100%"></div>
+        <div style="padding:10px;"><img src="brands/duroderoer2.png" style="width:100%"></div>
+        <div style="padding:10px;"><img src="brands/catchow.png" style="width:100%"></div>
+        <div style="padding:10px;"><img src="brands/gati.png" style="width:100%"></div>
+        <div style="padding:10px;"><img src="brands/felix.png" style="width:100%"></div>
+      </div>
     </div>
-    <div class="parallax"><img src="parallax-img/background1.png" alt="Unsplashed background img 2"></div>
-  </div>-->
+  </div>
+</div>
+
+<!-- SECCIÓN DOGS -->
+<div class="section scrollspy" style="background-image:url('parallax-img/background_dog.png');background-size: cover;" id="dogs">
+  <div class="container">
+    <div class="row white-text">
+      <div class="col s12 m12 l" data-aos="fade-right">
+        <br>
+        <h1 style="font-family:'Good Brush'">Perros / Cachorros</h1>
+        <hr style="width:30%;float:left;">
+        <br>
+        <hr style="width:20%;float:left;">
+        <h3 style="font-family:'Highest';color:#F3AB36;" data-aos="fade-right">Descubre nuestros productos</h3>
+        <br>
+    </div>
+  </div>
+  </div>
+</div>
+
 
 
   <!--PERROS-->
@@ -351,12 +422,26 @@
     </div>
   </div>
 
-  <!--PARALLAX 3-->
-  <div class="parallax-container valign-wrapper scrollspy" id="cats" >
-    <div class="section no-pad-bot">
+
+
+  <!-- SECCIÓN CATS -->
+<div class="section scrollspy" style="background-image:url('parallax-img/background10.png');background-size: cover;" id="cats">
+  <div class="container">
+    <div class="row white-text">
+      <div class="col s12 m12 l" data-aos="fade-right">
+        <br>
+        <h1 style="font-family:'Good Brush'">Gatos / Gatitos</h1>
+        <hr style="width:30%;float:left;">
+        <br>
+        <hr style="width:20%;float:left;">
+        <h3 style="font-family:'Highest';color:#F3AB36;" data-aos="fade-right">Descubre nuestros productos</h3>
+        <br>
     </div>
-    <div class="parallax"><img src="parallax-img/background-cat.jpg" alt="Unsplashed background img 2"></div>
   </div>
+  </div>
+</div>
+
+
 
   <!--GATOS-->
     <div class="section scrollspy" style="background-image: radial-gradient(#24A2FA,#0074C5);" id="catchow">
@@ -494,7 +579,8 @@
 
   <!--UBICACIÓN GOOGLE MAPS-->
   <div class="scrollspy" id="maps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.979462331864!2d-73.98380108509384!3d40.762476442463864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258f88254f2c3%3A0xc307e150c50c51f7!2sSheraton+New+York+Times+Square+Hotel!5e0!3m2!1ses-419!2scl!4v1547929775029" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.8980768247143!2d-70.69731048480338!3d-33.347612480803434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c73e41125a75%3A0xda4387f3e9ea90ec!2sBodegas+San+Martin!5e0!3m2!1ses-419!2scl!4v1557523374377!5m2!1ses-419!2scl" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
   <!-- Modal 1 -->
@@ -3524,6 +3610,9 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/scrollspy.js"></script>
@@ -3545,11 +3634,23 @@
       indicators: true,
       fullWidth: true
     });
+    $('.slider').carousel();
     $('.modal').modal();
     $('.dropdown-trigger').dropdown({
       coverTrigger: false,
     });
+
+
+    $('.autoplay').slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+    });
+
   });
+
+
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.scrollspy');
@@ -3562,27 +3663,24 @@
 
   $(window).scroll(function(){
 
-            if($(window).scrollTop()>350){
+            if($(window).scrollTop()>150){
               $('nav').addClass('white');
               $('nav').removeClass('no-shadow');
               $('.cambiocolor').removeClass('white-text');
-              
+              $('#logocolor').removeClass('hide');
+              $('#logosincolor').addClass('hide');
              
             }else{
               $('nav').removeClass('white');
               $('nav').addClass('no-shadow');
               $('.cambiocolor').addClass('white-text');
-              
+              $('#logocolor').addClass('hide');
+              $('#logosincolor').removeClass('hide');
               
             }
 
-            /*if($(window).scroll()==400){
-              $('nav').addClass('white');
-              $('nav').removeClass('no-shadow');
-              $('a').removeClass('white-text');
-            }*/
-
   });
+
 
   if ($('#back-to-top').length) {
   var scrollTrigger = 100, // px
