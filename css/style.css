@@ -17,6 +17,10 @@ ul li .navbar-option:hover{
       color: #F3AB36;
     }
 
+    ul li a.networks:hover i{
+      font-size:30px;
+      color:grey;
+    }
 
     .bold{
       font-weight: bold;
@@ -40,10 +44,11 @@ ul li .navbar-option:hover{
     }
 
     .options2:hover{
-      background-color:#e0e0e0;
-      border-bottom: 2px solid #F3AB36;
-      border-left:2px solid #008551;
+      /*background-color:#e0e0e0;*/
+      border-bottom: 2px solid #008551;
+      /*border-left:2px solid #008551;*/
       padding-left: 2px;
+      font-weight: bold;
     }
 
     .options3:hover{
