@@ -396,7 +396,8 @@
         <br>
         <hr style="width:20%;float:left;">
         <h3 style="font-family:'Highest';color:#F3AB36;" data-aos="fade-right">Descubre nuestros productos</h3>
-        <br>
+        
+        <h6 data-aos="fade-right"><i class="fas fa-angle-double-left fa-lg"></i> Click en las imágenes para ver más información <i class="fas fa-angle-double-right fa-lg"></i></h6>
     </div>
   </div>
   </div>
@@ -511,6 +512,7 @@
         <br>
         <hr style="width:20%;float:left;">
         <h3 style="font-family:'Highest';color:#F3AB36;" data-aos="fade-right">Descubre nuestros productos</h3>
+        <h6 data-aos="fade-right"><i class="fas fa-angle-double-left fa-lg"></i> Click en las imágenes para ver más información <i class="fas fa-angle-double-right fa-lg"></i></h6>
         <br>
     </div>
   </div>
@@ -3682,8 +3684,8 @@
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container white-text right-align" style="font-family: 'Bloomer';">
-      Powered by <a class="teal-text" href="#">Miguel Garcia</a>
+      <div class="container white-text right-align">
+      Powered by <a class="teal-text" href="#"  style="font-family: 'Highest'">Miguel Garcia</a>
       </div>
     </div>
   </footer>
@@ -3754,6 +3756,9 @@
   $(window).scroll(function(){
 
             if($(window).scrollTop()>150){
+              $('nav').addClass('animated');
+              $('nav').addClass('fadeInDown');
+              $('nav').addClass('faster');
               $('nav').addClass('white');
               $('nav').removeClass('no-shadow');
               $('.cambiocolor').removeClass('white-text');
@@ -3762,6 +3767,8 @@
               $('#button-comprar').addClass('button-border2');
              
             }else{
+              $('nav').removeClass('fadeInDown');
+              $('nav').addClass('fadeIn');
               $('nav').removeClass('white');
               $('nav').addClass('no-shadow');
               $('.cambiocolor').addClass('white-text');
